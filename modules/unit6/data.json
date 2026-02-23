@@ -153,6 +153,86 @@
         { "sentence": "___ they ___ (be good at / clean) the house?", "answer": "Are they good at cleaning" },
         { "sentence": "My dad ___ (be good at / repair) computers.", "answer": "is good at repairing" }
       ]
+    },
+    {
+      "id": "tech-vocab",
+      "title": "Technology Vocabulary",
+      "type": "match",
+      "instructions": "Match each technology word to its definition. These words come from the song 'My Brilliant Laptop'.",
+      "pairs": [
+        { "prompt": "A small portable computer you can carry around.", "answer": "laptop" },
+        { "prompt": "Small programs you can use on a phone or computer.", "answer": "apps" },
+        { "prompt": "Wireless internet connection.", "answer": "wifi" },
+        { "prompt": "A book you read on an electronic screen.", "answer": "e-book" },
+        { "prompt": "A bag you carry on your back.", "answer": "rucksack" },
+        { "prompt": "A book or website that explains what words mean.", "answer": "dictionary" },
+        { "prompt": "The flat surface you look at on a computer or phone.", "answer": "screen" },
+        { "prompt": "A global network that connects computers worldwide.", "answer": "the Internet" },
+        { "prompt": "A page or group of pages you visit online.", "answer": "website" },
+        { "prompt": "The system of linked pages on the Internet (www).", "answer": "World Wide Web" },
+        { "prompt": "To make a duplicate of text or an image.", "answer": "copy" },
+        { "prompt": "To place copied text or an image in a new position.", "answer": "paste" },
+        { "prompt": "A sticky substance used to join things together.", "answer": "glue" },
+        { "prompt": "A tool with two blades used for cutting paper.", "answer": "scissors" },
+        { "prompt": "A container for rubbish; also the recycle bin on a computer.", "answer": "bin" },
+        { "prompt": "The buttons with letters and numbers you type on.", "answer": "keyboard" },
+        { "prompt": "A small device you move with your hand to control a cursor.", "answer": "mouse" },
+        { "prompt": "A machine that puts text or images onto paper.", "answer": "printer" },
+        { "prompt": "A flat portable computer with a touchscreen.", "answer": "tablet" },
+        { "prompt": "A secret word or phrase you use to log in.", "answer": "password" },
+        { "prompt": "An electronic message sent over the Internet.", "answer": "email" },
+        { "prompt": "To save a file from the Internet to your computer.", "answer": "download" },
+        { "prompt": "To send a file from your computer to the Internet.", "answer": "upload" },
+        { "prompt": "A program you use to visit websites (e.g. Chrome, Firefox).", "answer": "browser" },
+        { "prompt": "A tool that helps you find information online (e.g. Google).", "answer": "search engine" },
+        { "prompt": "A small stick you plug into a computer to store files.", "answer": "USB stick" },
+        { "prompt": "A device you plug in to give power to a phone or laptop.", "answer": "charger" },
+        { "prompt": "A device you wear on your ears to listen to sound.", "answer": "headphones" },
+        { "prompt": "A document or piece of data stored on a computer.", "answer": "file" },
+        { "prompt": "A place on a computer where you keep files together.", "answer": "folder" }
+      ]
+    },
+    {
+      "id": "cappadocia",
+      "title": "Reading: Cappadocia",
+      "type": "reading",
+      "instructions": "Read the text about Cappadocia, then answer the questions.",
+      "passage": "Cappadocia, Turkey, is different from any other place on Earth. It is a very high area: over 1,000 metres above the sea. There are many mountains across this area which are thousands of years old and made from volcanic rock. Some of these mountains are really high. Mt Kayseri, which is the highest, is 3,916 metres!\n\nBecause Cappadocia is so high, the weather can change a lot. It can be very hot some days and very cold other days.\n\nThe people who lived in Cappadocia many years ago made small houses inside the mountains and rocks. You should visit it because you can explore inside the mountains and see how the people lived!",
+      "questions": [
+        { "question": "In which country is Cappadocia?", "options": ["Turkey", "Greece", "Italy", "Egypt"], "answer": "Turkey" },
+        { "question": "How high is Cappadocia above the sea?", "options": ["Over 500 metres", "Over 1,000 metres", "Over 2,000 metres", "Over 5,000 metres"], "answer": "Over 1,000 metres" },
+        { "question": "What are the mountains made from?", "options": ["Limestone", "Volcanic rock", "Sandstone", "Clay"], "answer": "Volcanic rock" },
+        { "question": "What is the name of the highest mountain?", "options": ["Mt Everest", "Mt Kayseri", "Mt Olympus", "Mt Ararat"], "answer": "Mt Kayseri" },
+        { "question": "How high is Mt Kayseri?", "options": ["1,916 metres", "2,916 metres", "3,916 metres", "4,916 metres"], "answer": "3,916 metres" },
+        { "question": "What is the weather like in Cappadocia?", "options": ["Always hot", "Always cold", "It can change a lot", "Always rainy"], "answer": "It can change a lot" },
+        { "question": "How old are the mountains?", "options": ["Hundreds of years", "Thousands of years", "Millions of years", "Tens of years"], "answer": "Thousands of years" },
+        { "question": "What did people build inside the mountains?", "options": ["Castles", "Small houses", "Temples", "Schools"], "answer": "Small houses" },
+        { "question": "Why should you visit Cappadocia?", "options": ["For the beaches", "To explore the mountains and see how people lived", "For the food", "For shopping"], "answer": "To explore the mountains and see how people lived" },
+        { "question": "Cappadocia is described as different from …", "options": ["Other Turkish cities", "Any other place on Earth", "European countries", "Asian countries"], "answer": "Any other place on Earth" },
+        { "question": "What can the weather be like on some days?", "options": ["Very hot", "Very windy", "Very foggy", "Very snowy"], "answer": "Very hot" },
+        { "question": "The text says you 'should' visit. This means …", "options": ["You must go", "It is a good idea to go", "You are not allowed to go", "You have to go"], "answer": "It is a good idea to go" }
+      ]
+    },
+    {
+      "id": "the-project",
+      "title": "Reading: The Project",
+      "type": "reading",
+      "instructions": "Read the story about Katy, Mike and Harold, then answer the questions.",
+      "passage": "Katy, Mike and Harold were in the library talking about a project about Turkey. Mr Carlton, their teacher, said they could choose any topic for their project, but it should be about Turkey.\n\n'Betty's group is doing their project about the geography of Turkey,' said Katy.\n\nHarold was reading about Turkey on a website. 'The history of Turkey is very interesting. It was part of the Ottoman Empire!'\n\n'Freddy's group's doing their project about that,' said Katy. 'What about science?'\n\n'No,' said Harold. He didn't like science. 'The project's for Friday,' she said. 'Let's hurry up!'\n\nKaty looked at her timetable. 'I'm sure that Turkey has lots of stories and myths. These can teach us a lot about a place. Our project can be about Turkish literature.'\n\n'Great idea! We should find one on the Internet. Mr Carlton likes us to use IT,' said Mike.\n\n'Why don't we do something original, like re-write the story as a poem? I'm good at writing poems,' said Katy. 'Mike's good at art. He can draw the pictures. And you're good at acting, Harold. You can read it to the class!'\n\n'Perfect,' said Mike. So that's what they did!",
+      "questions": [
+        { "question": "Where were Katy, Mike and Harold?", "options": ["In the classroom", "In the library", "At home", "In the park"], "answer": "In the library" },
+        { "question": "Who is their teacher?", "options": ["Mr Brown", "Mr Carlton", "Mr Smith", "Mr Wilson"], "answer": "Mr Carlton" },
+        { "question": "What must the project be about?", "options": ["France", "Turkey", "Greece", "Spain"], "answer": "Turkey" },
+        { "question": "What is Betty's group doing their project about?", "options": ["History", "Science", "Geography", "Literature"], "answer": "Geography" },
+        { "question": "What empire was Turkey part of?", "options": ["Roman Empire", "Ottoman Empire", "British Empire", "Byzantine Empire"], "answer": "Ottoman Empire" },
+        { "question": "Which subject does Harold NOT like?", "options": ["Geography", "History", "Science", "Literature"], "answer": "Science" },
+        { "question": "When is the project due?", "options": ["Monday", "Wednesday", "Friday", "Next week"], "answer": "Friday" },
+        { "question": "What did Katy suggest as the topic?", "options": ["Turkish food", "Turkish music", "Turkish literature", "Turkish sport"], "answer": "Turkish literature" },
+        { "question": "What is Katy good at?", "options": ["Writing poems", "Drawing", "Acting", "Singing"], "answer": "Writing poems" },
+        { "question": "What is Mike good at?", "options": ["Writing", "Art", "Acting", "Science"], "answer": "Art" },
+        { "question": "What is Harold good at?", "options": ["Writing", "Drawing", "Acting", "Singing"], "answer": "Acting" },
+        { "question": "Where will they find information?", "options": ["In books", "On the Internet", "From the teacher", "From their parents"], "answer": "On the Internet" }
+      ]
     }
   ]
 }

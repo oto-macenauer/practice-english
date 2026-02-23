@@ -1,9 +1,12 @@
 (async () => {
   const SECTION_META = {
-    modals:    { icon: "📋", color: "blue" },
-    maps:      { icon: "🗺️", color: "teal" },
-    subjects:  { icon: "🏫", color: "purple" },
-    "good-at": { icon: "⭐", color: "orange" },
+    modals:        { icon: "📋", color: "blue" },
+    maps:          { icon: "🗺️", color: "teal" },
+    subjects:      { icon: "🏫", color: "purple" },
+    "good-at":     { icon: "⭐", color: "orange" },
+    "tech-vocab":  { icon: "💻", color: "indigo" },
+    cappadocia:    { icon: "📖", color: "sky" },
+    "the-project": { icon: "📚", color: "emerald" },
   };
 
   const data = await App.loadJSON("data.json");
@@ -68,6 +71,27 @@
       });
     }
 
+    if (section.type === "reading") {
+      // Show passage
+      const passageDiv = document.createElement("div");
+      passageDiv.className = "reading-passage";
+      passageDiv.innerHTML = section.passage
+        .split("\n\n")
+        .map((p) => `<p>${esc(p)}</p>`)
+        .join("");
+      body.appendChild(passageDiv);
+
+      // Show questions (shuffled, picked)
+      const questions = App.shuffle([...section.questions]).slice(0, PICK);
+      questions.forEach((q, qi) => {
+        body.appendChild(buildChoiceQuestion(qi, q, items));
+      });
+    }
+
+    if (section.type === "gap-fill") {
+      body.appendChild(buildGapFill(section, items));
+    }
+
     block.appendChild(body);
 
     // --- footer with check button ---
@@ -108,9 +132,10 @@
   // ========== Builders ==========
 
   function buildChoiceQuestion(index, q, items) {
+    const prompt = q.sentence || q.question;
     const div = document.createElement("div");
     div.className = "question";
-    div.innerHTML = `<p>${index + 1}. ${esc(q.sentence)}</p><div class="options"></div><div class="result"></div>`;
+    div.innerHTML = `<p>${index + 1}. ${esc(prompt)}</p><div class="options"></div><div class="result"></div>`;
     const optBox = div.querySelector(".options");
     const result = div.querySelector(".result");
     let selected = null;
@@ -190,6 +215,80 @@
         input.disabled = true;
         return correct;
       },
+    });
+
+    return div;
+  }
+
+  function buildGapFill(section, items) {
+    const div = document.createElement("div");
+    div.className = "gap-fill-container";
+
+    const wordBank = App.shuffle([...section.wordBank]);
+
+    // Build HTML: replace {N} with <select> dropdowns
+    let html = esc(section.text);
+
+    // Escape first, then add selects (we need to work with the escaped text)
+    // Re-do: work on raw text, build segments manually
+    html = section.text;
+    const parts = html.split(/\{(\d+)\}/);
+    // parts alternates: text, number, text, number, ...
+
+    const container = document.createElement("div");
+    container.className = "gap-fill-text";
+
+    const selectEls = {}; // index -> select element
+
+    parts.forEach((part, i) => {
+      if (i % 2 === 0) {
+        // Text segment — convert newlines to <br> and escape
+        const lines = part.split("\n");
+        lines.forEach((line, li) => {
+          if (li > 0) container.appendChild(document.createElement("br"));
+          container.appendChild(document.createTextNode(line));
+        });
+      } else {
+        // Blank number
+        const blankIndex = parseInt(part) - 1;
+        const sel = document.createElement("select");
+        sel.className = "gap-select";
+        const defaultOpt = document.createElement("option");
+        defaultOpt.value = "";
+        defaultOpt.textContent = "…";
+        sel.appendChild(defaultOpt);
+
+        wordBank.forEach((w) => {
+          const opt = document.createElement("option");
+          opt.value = w;
+          opt.textContent = w;
+          sel.appendChild(opt);
+        });
+
+        selectEls[blankIndex] = sel;
+        container.appendChild(sel);
+      }
+    });
+
+    div.appendChild(container);
+
+    // Add result area
+    const resultArea = document.createElement("div");
+    resultArea.className = "gap-fill-results";
+    div.appendChild(resultArea);
+
+    // Register each blank as an item
+    section.blanks.forEach((answer, idx) => {
+      items.push({
+        check() {
+          const sel = selectEls[idx];
+          if (!sel) return false;
+          const correct = normalize(sel.value) === normalize(answer);
+          sel.disabled = true;
+          sel.classList.add(correct ? "correct" : "wrong");
+          return correct;
+        },
+      });
     });
 
     return div;

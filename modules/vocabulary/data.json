@@ -1,0 +1,108 @@
+{
+  "title": "Vocabulary",
+  "questionsPerSection": 8,
+  "units": [
+    {
+      "id": "unit6",
+      "title": "Unit 6",
+      "color": "rose",
+      "sections": [
+        {
+          "id": "tech-words",
+          "title": "Technology Words",
+          "icon": "💻",
+          "color": "indigo",
+          "type": "match",
+          "instructions": "Match each technology word to its definition.",
+          "pairs": [
+            { "prompt": "A small portable computer you can carry around.", "answer": "laptop" },
+            { "prompt": "Small programs you use on a phone or computer.", "answer": "apps" },
+            { "prompt": "Wireless internet connection.", "answer": "wifi" },
+            { "prompt": "A book you read on an electronic screen.", "answer": "e-book" },
+            { "prompt": "A bag you carry on your back.", "answer": "rucksack" },
+            { "prompt": "A book or website that explains what words mean.", "answer": "dictionary" },
+            { "prompt": "The flat surface you look at on a computer or phone.", "answer": "screen" },
+            { "prompt": "A global network that connects computers worldwide.", "answer": "the Internet" },
+            { "prompt": "A page or group of pages you visit online.", "answer": "website" },
+            { "prompt": "To make a duplicate of text or an image.", "answer": "copy" },
+            { "prompt": "To place copied text or an image in a new position.", "answer": "paste" },
+            { "prompt": "A container for rubbish; also the recycle bin on a computer.", "answer": "bin" },
+            { "prompt": "A program you use to visit websites (e.g. Chrome).", "answer": "browser" },
+            { "prompt": "To save a file from the Internet to your computer.", "answer": "download" },
+            { "prompt": "A secret word or phrase you use to log in.", "answer": "password" }
+          ]
+        },
+        {
+          "id": "map-words",
+          "title": "Map & Direction Words",
+          "icon": "🗺️",
+          "color": "teal",
+          "type": "match",
+          "instructions": "Match each map or direction word to its meaning.",
+          "pairs": [
+            { "prompt": "A map that shows countries and their borders.", "answer": "political map" },
+            { "prompt": "A map that shows mountains, rivers and land features.", "answer": "physical map" },
+            { "prompt": "A map that shows roads and buildings in an area.", "answer": "street map" },
+            { "prompt": "Shows how distances on a map relate to real distances.", "answer": "scale" },
+            { "prompt": "Explains what the symbols and colours on a map mean.", "answer": "key" },
+            { "prompt": "A diagram showing north, south, east and west.", "answer": "compass rose" },
+            { "prompt": "A small picture on a map representing a real thing.", "answer": "symbol" },
+            { "prompt": "The line between two countries or regions.", "answer": "border" },
+            { "prompt": "The name that tells you what a map is about.", "answer": "title" },
+            { "prompt": "Continuing forward without turning.", "answer": "straight on" },
+            { "prompt": "On the other side of the road or area.", "answer": "opposite" },
+            { "prompt": "Right beside something.", "answer": "next to" },
+            { "prompt": "In the middle of two things.", "answer": "between" },
+            { "prompt": "From one side to the other.", "answer": "across" },
+            { "prompt": "Following the length of a road or river.", "answer": "along" },
+            { "prompt": "Going by something without stopping.", "answer": "past" },
+            { "prompt": "Entering one side and coming out the other.", "answer": "through" },
+            { "prompt": "A circular junction where roads meet.", "answer": "roundabout" },
+            { "prompt": "A narrow path for walking.", "answer": "footpath" },
+            { "prompt": "The most important city of a country.", "answer": "capital" }
+          ]
+        },
+        {
+          "id": "vocab-context",
+          "title": "Vocabulary in Context",
+          "icon": "✏️",
+          "color": "amber",
+          "type": "fill-choice",
+          "instructions": "Choose the correct word to complete each sentence.",
+          "questions": [
+            { "sentence": "I need to ___ this file from the Internet to my computer.", "options": ["download", "upload", "paste", "copy"], "answer": "download" },
+            { "sentence": "Can you ___ this text and put it in the other document?", "options": ["copy", "paste", "download", "email"], "answer": "copy" },
+            { "sentence": "Use a ___ to find information online, for example Google.", "options": ["search engine", "keyboard", "printer", "charger"], "answer": "search engine" },
+            { "sentence": "You need ___ to connect to the Internet without a cable.", "options": ["wifi", "USB", "a charger", "a password"], "answer": "wifi" },
+            { "sentence": "The ___ shows the distance between real places on a map.", "options": ["scale", "key", "title", "border"], "answer": "scale" },
+            { "sentence": "A ___ map shows countries and their borders.", "options": ["political", "physical", "street", "road"], "answer": "political" },
+            { "sentence": "Go ___ and then turn left at the traffic lights.", "options": ["straight on", "round", "past", "through"], "answer": "straight on" },
+            { "sentence": "The cinema is ___ the restaurant. It's on the other side of the road.", "options": ["opposite", "next to", "behind", "between"], "answer": "opposite" },
+            { "sentence": "I read the novel on my ___ during the train journey.", "options": ["e-book", "dictionary", "laptop", "tablet"], "answer": "e-book" },
+            { "sentence": "She put all her books in her ___ before leaving for school.", "options": ["rucksack", "bin", "folder", "file"], "answer": "rucksack" },
+            { "sentence": "Open your ___ and type the address in the bar.", "options": ["browser", "file", "folder", "screen"], "answer": "browser" },
+            { "sentence": "The ___ on a map explains what each symbol means.", "options": ["key", "scale", "title", "border"], "answer": "key" },
+            { "sentence": "Walk ___ the park and then turn right.", "options": ["past", "between", "through", "along"], "answer": "past" },
+            { "sentence": "Don't forget to bring your ___ or your phone battery will die.", "options": ["charger", "keyboard", "mouse", "headphones"], "answer": "charger" },
+            { "sentence": "You ___ listen carefully to your teacher in class.", "options": ["should", "shouldn't", "can't", "mustn't"], "answer": "should" },
+            { "sentence": "You ___ talk to your classmates during a test.", "options": ["shouldn't", "should", "must", "have to"], "answer": "shouldn't" },
+            { "sentence": "She is very good ___ playing the piano.", "options": ["at", "in", "on", "for"], "answer": "at" },
+            { "sentence": "A ___ map shows mountains, rivers and lakes.", "options": ["physical", "political", "street", "road"], "answer": "physical" },
+            { "sentence": "The bank is ___ the supermarket and the post office.", "options": ["between", "opposite", "along", "past"], "answer": "between" },
+            { "sentence": "He put the old papers in the ___.", "options": ["bin", "screen", "folder", "rucksack"], "answer": "bin" },
+            { "sentence": "You need to type your ___ to log in to your account.", "options": ["password", "email", "browser", "app"], "answer": "password" },
+            { "sentence": "Take the second turning ___ the left.", "options": ["on", "at", "in", "by"], "answer": "on" },
+            { "sentence": "I'll ___ the photo into the document.", "options": ["paste", "copy", "download", "upload"], "answer": "paste" },
+            { "sentence": "The compass ___ on a map shows north, south, east and west.", "options": ["rose", "key", "scale", "symbol"], "answer": "rose" },
+            { "sentence": "The school is ___ the end of this road.", "options": ["at", "on", "in", "by"], "answer": "at" },
+            { "sentence": "I use ___ to stick the pictures onto the poster.", "options": ["glue", "scissors", "paste", "tape"], "answer": "glue" },
+            { "sentence": "She needs ___ to cut out the photos for her project.", "options": ["scissors", "glue", "paste", "tape"], "answer": "scissors" },
+            { "sentence": "Go ___ the tunnel. The station is on the other side.", "options": ["through", "across", "along", "past"], "answer": "through" },
+            { "sentence": "North is usually at the ___ of a map.", "options": ["top", "bottom", "left", "right"], "answer": "top" },
+            { "sentence": "To ___ a file means to send it from your computer to the Internet.", "options": ["upload", "download", "paste", "copy"], "answer": "upload" }
+          ]
+        }
+      ]
+    }
+  ]
+}

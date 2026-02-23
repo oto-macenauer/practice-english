@@ -58,10 +58,13 @@
     }
 
     /* Section accent colours */
-    .section-block[data-color="blue"]   .section-header { background: #3b82f6; }
-    .section-block[data-color="teal"]   .section-header { background: #14b8a6; }
-    .section-block[data-color="purple"] .section-header { background: #8b5cf6; }
-    .section-block[data-color="orange"] .section-header { background: #f97316; }
+    .section-block[data-color="blue"]    .section-header { background: #3b82f6; }
+    .section-block[data-color="teal"]    .section-header { background: #14b8a6; }
+    .section-block[data-color="purple"]  .section-header { background: #8b5cf6; }
+    .section-block[data-color="orange"]  .section-header { background: #f97316; }
+    .section-block[data-color="indigo"]  .section-header { background: #6366f1; }
+    .section-block[data-color="sky"]     .section-header { background: #0ea5e9; }
+    .section-block[data-color="emerald"] .section-header { background: #10b981; }
 
     /* ===== Questions ===== */
     .question {
@@ -110,6 +113,55 @@
     .question input[type="text"] { max-width: 340px; }
     .question .match-select { max-width: 220px; }
 
+    /* ===== Reading passage ===== */
+    .reading-passage {
+      background: #f0f9ff;
+      border: 1px solid #bae6fd;
+      border-radius: var(--radius);
+      padding: 1rem 1.25rem;
+      margin-bottom: 1rem;
+      line-height: 1.8;
+    }
+    .reading-passage p {
+      margin-bottom: 0.75rem;
+    }
+    .reading-passage p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* ===== Gap-fill ===== */
+    .gap-fill-text {
+      background: #fefce8;
+      border: 1px solid #fde68a;
+      border-radius: var(--radius);
+      padding: 1rem 1.25rem;
+      margin-bottom: 0.5rem;
+      line-height: 2.4;
+      font-size: 1rem;
+    }
+    .gap-select {
+      padding: 0.2rem 0.4rem;
+      border: 1px solid var(--color-border);
+      border-radius: 4px;
+      font-size: 0.85rem;
+      background: #fff;
+      min-width: 110px;
+      vertical-align: middle;
+    }
+    .gap-select:focus {
+      border-color: var(--color-primary);
+      outline: none;
+      box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
+    }
+    .gap-select.correct {
+      border-color: var(--color-success);
+      background: #dcfce7;
+    }
+    .gap-select.wrong {
+      border-color: var(--color-error);
+      background: #fee2e2;
+    }
+
     .question .result {
       margin-top: 0.4rem;
       font-size: 0.85rem;
@@ -157,7 +209,7 @@
   <main class="container">
     <div class="module-header">
       <h1>📝 Unit 6 Test</h1>
-      <p>Obligation, Suggestion &amp; Prohibition &bull; Maps &amp; Map Reading &bull; School Subjects &bull; To be good at</p>
+      <p>Obligation, Suggestion &amp; Prohibition &bull; Maps &amp; Map Reading &bull; School Subjects &bull; To be good at &bull; Technology Vocabulary &bull; Reading Comprehension</p>
     </div>
 
     <div class="score-bar">
