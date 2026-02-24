@@ -65,6 +65,8 @@
     .section-block[data-color="indigo"]  .section-header { background: #6366f1; }
     .section-block[data-color="sky"]     .section-header { background: #0ea5e9; }
     .section-block[data-color="emerald"] .section-header { background: #10b981; }
+    .section-block[data-color="rose"]    .section-header { background: #f43f5e; }
+    .section-block[data-color="amber"]   .section-header { background: #f59e0b; }
 
     /* ===== Questions ===== */
     .question {
@@ -197,6 +199,40 @@
     .score-bar .score {
       font-size: 1.1rem;
       font-weight: 700;
+    }
+
+    /* ===== Grade display ===== */
+    .grade-display {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      padding: 1.5rem;
+      background: var(--color-surface);
+      border: 2px solid var(--color-border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-md);
+      margin-top: 1rem;
+    }
+    .grade-number {
+      font-size: 2rem;
+      font-weight: 800;
+      color: #fff;
+      width: 3.5rem;
+      height: 3.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .grade-label {
+      font-size: 1.25rem;
+      font-weight: 700;
+    }
+    .grade-pct {
+      font-size: 0.9rem;
+      color: var(--color-text-muted);
+      margin-top: 0.15rem;
     }
   </style>
 </head>

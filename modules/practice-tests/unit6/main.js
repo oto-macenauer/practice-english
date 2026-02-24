@@ -5,9 +5,15 @@
     subjects:      { icon: "🏫", color: "purple" },
     "good-at":     { icon: "⭐", color: "orange" },
     "tech-vocab":  { icon: "💻", color: "indigo" },
-    cappadocia:    { icon: "📖", color: "sky" },
+    cappadocia:    { icon: "🏔️", color: "sky" },
     "the-project": { icon: "📚", color: "emerald" },
+    "barrier-reef":{ icon: "🐠", color: "sky" },
+    "sports-day":  { icon: "🏅", color: "rose" },
+    iceland:       { icon: "🌋", color: "indigo" },
+    "school-trip":  { icon: "🚌", color: "amber" },
   };
+
+  const READING_PICK = 2; // number of reading sections per test
 
   const data = await App.loadJSON("data.json");
   const PICK = data.questionsPerSection || 5;
@@ -15,10 +21,18 @@
   const scoreEl = document.getElementById("score");
   const totalEl = document.getElementById("total");
 
+  // Separate reading and non-reading sections, pick 2 random readings
+  const nonReadingSections = data.sections.filter(s => s.type !== "reading");
+  const readingSections = App.shuffle(
+    data.sections.filter(s => s.type === "reading")
+  ).slice(0, READING_PICK);
+  const activeSections = [...nonReadingSections, ...readingSections];
+
   let totalCorrect = 0;
   let totalQuestions = 0;
+  let sectionsChecked = 0;
 
-  data.sections.forEach((section) => {
+  activeSections.forEach((section) => {
     const meta = SECTION_META[section.id] || { icon: "📄", color: "blue" };
 
     const block = document.createElement("div");
@@ -122,12 +136,50 @@
 
       checkBtn.disabled = true;
       checkBtn.textContent = `${sectionScore} / ${items.length} correct`;
+
+      // Check if all sections are done
+      sectionsChecked++;
+      if (sectionsChecked === activeSections.length) {
+        showGrade(totalCorrect, totalQuestions);
+      }
     });
 
     area.appendChild(block);
   });
 
   totalEl.textContent = totalQuestions;
+
+  // ========== Grading ==========
+
+  function showGrade(correct, total) {
+    const pct = Math.round((correct / total) * 100);
+    let grade, label, color;
+
+    if (pct >= 90) {
+      grade = 1; label = "Excellent"; color = "#16a34a";
+    } else if (pct >= 75) {
+      grade = 2; label = "Very Good"; color = "#2563eb";
+    } else if (pct >= 60) {
+      grade = 3; label = "Good"; color = "#f59e0b";
+    } else if (pct >= 30) {
+      grade = 4; label = "Sufficient"; color = "#f97316";
+    } else {
+      grade = 5; label = "Insufficient"; color = "#dc2626";
+    }
+
+    const gradeDiv = document.createElement("div");
+    gradeDiv.className = "grade-display";
+    gradeDiv.style.borderColor = color;
+    gradeDiv.innerHTML =
+      `<div class="grade-number" style="background:${color}">${grade}</div>` +
+      `<div class="grade-info">` +
+        `<div class="grade-label" style="color:${color}">${label}</div>` +
+        `<div class="grade-pct">${pct}% — ${correct} out of ${total} correct</div>` +
+      `</div>`;
+
+    area.appendChild(gradeDiv);
+    gradeDiv.scrollIntoView({ behavior: "smooth", block: "center" });
+  }
 
   // ========== Builders ==========
 
@@ -229,30 +281,22 @@
 
     const wordBank = App.shuffle([...section.wordBank]);
 
-    // Build HTML: replace {N} with <select> dropdowns
-    let html = esc(section.text);
-
-    // Escape first, then add selects (we need to work with the escaped text)
-    // Re-do: work on raw text, build segments manually
-    html = section.text;
+    let html = section.text;
     const parts = html.split(/\{(\d+)\}/);
-    // parts alternates: text, number, text, number, ...
 
     const container = document.createElement("div");
     container.className = "gap-fill-text";
 
-    const selectEls = {}; // index -> select element
+    const selectEls = {};
 
     parts.forEach((part, i) => {
       if (i % 2 === 0) {
-        // Text segment — convert newlines to <br> and escape
         const lines = part.split("\n");
         lines.forEach((line, li) => {
           if (li > 0) container.appendChild(document.createElement("br"));
           container.appendChild(document.createTextNode(line));
         });
       } else {
-        // Blank number
         const blankIndex = parseInt(part) - 1;
         const sel = document.createElement("select");
         sel.className = "gap-select";
@@ -275,12 +319,10 @@
 
     div.appendChild(container);
 
-    // Add result area
     const resultArea = document.createElement("div");
     resultArea.className = "gap-fill-results";
     div.appendChild(resultArea);
 
-    // Register each blank as an item
     section.blanks.forEach((answer, idx) => {
       items.push({
         check() {
