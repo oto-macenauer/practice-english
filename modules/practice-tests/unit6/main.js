@@ -135,9 +135,11 @@
     const prompt = q.sentence || q.question;
     const div = document.createElement("div");
     div.className = "question";
-    div.innerHTML = `<p>${index + 1}. ${esc(prompt)}</p><div class="options"></div><div class="result"></div>`;
+    div.innerHTML = `<p>${index + 1}. ${esc(prompt)}</p><div class="options"></div><div class="result"></div>` +
+      (q.explanation ? `<div class="explanation">${esc(q.explanation)}</div>` : "");
     const optBox = div.querySelector(".options");
     const result = div.querySelector(".result");
+    const explEl = div.querySelector(".explanation");
     let selected = null;
 
     App.shuffle([...q.options]).forEach((opt) => {
@@ -162,6 +164,7 @@
         });
         result.textContent = correct ? "✓ Correct!" : `✗ Answer: ${q.answer}`;
         result.className = "result " + (correct ? "ok" : "fail");
+        if (explEl) explEl.style.display = "block";
         return correct;
       },
     });
