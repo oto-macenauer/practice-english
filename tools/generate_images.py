@@ -67,13 +67,29 @@ MODEL_MAP = {
     "together": "black-forest-labs/FLUX.1-schnell-Free",
 }
 
-STYLE_PREFIX = (
-    "Create an educational app illustration. "
-    "Positive and energetic atmosphere, comic book art style inspired by DC Comics, "
-    "muted color palette with shades of gray and brown, detailed line work, "
-    "cinematic composition, high contrast. "
-    "Avoid using labels and texts. "
+# ---------------------------------------------------------------------------
+# Modular prompt system
+# ---------------------------------------------------------------------------
+# [Core Style] + [Subject & Action] + [Characters & Setting] + [Refinement]
+
+CORE_STYLE = (
+    "An energetic educational app illustration, "
+    "comic book art style inspired by modern DC Comics, "
+    "cinematic and dynamic composition, high-contrast, "
+    "detailed ink line work. "
+    "Muted color palette with shades of slate gray, charcoal, and deep browns. "
 )
+
+REFINEMENT = (
+    "Dramatic lighting with strong shadows and bright highlights, "
+    "focused on an engaging atmosphere. No labels or text."
+)
+
+
+def build_prompt(subject_action: str, characters_setting: str) -> str:
+    """Assemble a full prompt from the modular blocks."""
+    return f"{CORE_STYLE}{subject_action} {characters_setting} {REFINEMENT}"
+
 
 # ---------------------------------------------------------------------------
 # Image definitions
@@ -81,89 +97,112 @@ STYLE_PREFIX = (
 IMAGES: dict[str, dict] = {}
 
 
-def img(id: str, path: str, prompt: str, group: str = "misc"):
+def img(id: str, path: str, subject: str, scene: str, group: str = "misc"):
     """Register an image to generate."""
-    IMAGES[id] = {"path": path, "prompt": STYLE_PREFIX + prompt, "group": group}
+    IMAGES[id] = {
+        "path": path,
+        "prompt": build_prompt(subject, scene),
+        "group": group,
+    }
 
 
 # --- Module cards (homepage) ---
 img("mod-vocabulary",  "modules/vocabulary.webp",
-    'The topic is "vocabulary". A stack of flashcards with simple pictures, word bubbles floating around.',
+    "A charismatic teacher figure conjures swirling, glowing blue 3D word bubbles and flashcards from an open book.",
+    "Diverse students in a bright modern classroom reach up to catch the floating words, amazed.",
     group="modules")
 
 img("mod-grammar",     "modules/grammar.webp",
-    'The topic is "grammar". A pencil writing on lined paper, sentence parts highlighted in different colours.',
+    "A charismatic figure conjures swirling, glowing blue 3D punctuation marks and sentence fragments from their hands.",
+    "An enthusiastic teacher and diverse students inside a modern school library, looking up in wonder.",
     group="modules")
 
 img("mod-spelling",    "modules/spelling.webp",
-    'The topic is "spelling". Wooden letter blocks scattered playfully, a child placing a block.',
+    "A confident student figure assembles glowing blue 3D letter blocks into words mid-air, like building blocks.",
+    "Other students watch and cheer inside a colorful modern classroom.",
     group="modules")
 
 img("mod-reading",     "modules/reading.webp",
-    'The topic is "reading". A child sitting cross-legged reading a big open book, illustrations flying out of the pages.',
+    "A young hero figure holds open a massive glowing book, and vivid 3D illustrations — castles, dragons, ships — pour out of the pages.",
+    "Students sit cross-legged on the floor of a grand library, captivated by the scenes emerging from the book.",
     group="modules")
 
 img("mod-listening",   "modules/listening.webp",
-    'The topic is "listening". A pair of headphones with sound waves and musical notes coming out.',
+    "A figure wearing an elegant robe stands inside a grand amphitheater, smiling as complex, glowing blue sound waves, musical notes, and symbols gently swirl towards the group.",
+    "Students in the foreground wear large headphones and look up in awe, actively listening and absorbing the symbols.",
     group="modules")
 
 img("mod-tests",       "modules/tests.webp",
-    'The topic is "practice tests". A test paper with checkmarks and a gold star, a pencil beside it.',
+    "A figure wearing a graduation cap stands confidently over a giant, 3D glowing blue puzzle block, using a wrench to fit the final glowing piece into place.",
+    "A team of diverse students works together, offering tools and celebrating.",
     group="modules")
 
 # --- Unit 7 topic illustrations ---
 img("topic-jobs",      "topics/unit7-jobs.webp",
-    'The topic is "jobs and professions". A group of diverse workers: a chef in white hat, a photographer with camera, a waiter with tray, a singer with microphone, a farmer with pitchfork.',
+    "A panoramic scene of diverse workers in action: a chef cooking with flames, a photographer snapping photos, a singer performing on stage, a farmer harvesting crops.",
+    "Each worker glows with blue energy outlines, standing in their respective environments merged into one dynamic cityscape.",
     group="topics")
 
 img("topic-adjectives","topics/unit7-adjectives.webp",
-    'The topic is "personality adjectives". Six faces showing traits: kind and smiling, clever with glasses, lazy yawning, brave and strong, friendly waving, popular surrounded by friends.',
+    "Six expressive character portraits arranged in a comic panel grid, each showing a distinct personality: kind and warm, clever and focused, lazy and yawning, brave and determined, friendly and waving, popular and surrounded by admirers.",
+    "Each portrait has a different background tone reflecting the mood of the trait.",
     group="topics")
 
 img("topic-zero-cond", "topics/unit7-zero-conditional.webp",
-    'The topic is "zero conditional / cause and effect". On the left the sun shining on ice, an arrow in the middle, on the right a puddle of water. Science experiment feel.',
+    "A dramatic split-panel illustration: on one side, the blazing sun shines down on a block of ice; on the other side, a puddle of water with steam rising. A glowing blue arrow connects the two scenes.",
+    "A young scientist figure stands between the panels, gesturing to demonstrate the cause and effect.",
     group="topics")
 
 img("topic-look-like", "topics/unit7-look-like.webp",
-    'The topic is "describing appearance". A family portrait: tall dad with brown hair, short mum with blonde hair, child with curly red hair, grandma with glasses.',
+    "A family portrait scene with distinct character designs: a tall father with brown hair, a shorter mother with blonde hair, a child with wild curly red hair, and a grandmother with glasses and silver hair.",
+    "They stand together on a porch, each with exaggerated comic-book features to emphasize their unique appearance.",
     group="topics")
 
 img("topic-passive",   "topics/unit5-passive.webp",
-    'The topic is "passive voice / materials". A factory conveyor belt with cars being assembled by robot arms.',
+    "A dramatic factory scene with a conveyor belt where glowing cars are being assembled by powerful robot arms, sparks flying.",
+    "A student figure watches through a viewing window, taking notes on a clipboard.",
     group="topics")
 
 img("topic-subjects",  "topics/unit6-subjects.webp",
-    'The topic is "school subjects". Icons in a circle: a flask for science, a paintbrush for art, a football for sports, a musical note for music, a globe for geography, a calculator for maths.',
+    "A dynamic ring of floating school subject icons orbiting a central glowing globe: a bubbling flask, a paintbrush with paint splatter, a football mid-kick, a musical note, a calculator, a compass.",
+    "Students stand below looking up at the orbiting icons in a grand school hall.",
     group="topics")
 
 img("topic-altamira",  "topics/unit7-altamira.webp",
-    'The topic is "archaeology and cave paintings". Inside a dimly lit cave with prehistoric paintings of bison and horses on rocky walls, warm torchlight illuminating the ancient art.',
+    "Inside a vast, dimly lit prehistoric cave, ancient paintings of bison and horses glow on the rocky walls with warm amber torchlight.",
+    "A young explorer figure holds up a torch, illuminating the cave art with dramatic shadows cast across the cavern.",
     group="topics")
 
 img("topic-quixote",   "topics/unit7-quixote.webp",
-    'The topic is "Don Quixote". A knight on his horse charging at windmills in a sunny Spanish landscape, his friend watching from behind.',
+    "Don Quixote in battered armor charges on his thin horse towards enormous windmills silhouetted against a dramatic sunset sky.",
+    "Sancho Panza watches from behind a rock, shaking his head. The Spanish countryside stretches out with rolling golden hills.",
     group="topics")
 
 # --- Unit 6 topic illustrations ---
 img("topic-maps",      "topics/unit6-maps.webp",
-    'The topic is "maps and directions". A treasure-style map with a compass rose, dotted path, landmarks like a school, park, library.',
+    "A giant treasure-style map unfurls across a table, with a glowing blue compass rose, dotted paths, and 3D landmark icons rising from the surface — a school, park, library.",
+    "A group of students leans over the map, tracing routes with their fingers, an adventure-planning scene.",
     group="topics")
 
 img("topic-technology","topics/unit6-technology.webp",
-    'The topic is "technology". A laptop, tablet and smartphone on a desk with wifi symbol and browser window.',
+    "A sleek desk setup with a glowing laptop, tablet and smartphone, holographic wifi symbols and download arrows floating above the screens.",
+    "A student figure interacts with the holographic interface, swiping and tapping mid-air.",
     group="topics")
 
 img("topic-modals",    "topics/unit6-modals.webp",
-    'The topic is "rules, obligation and advice". Three road signs: a green thumbs up, a blue exclamation mark, and a red X.',
+    "Three imposing road signs dominate the scene: a green sign with a glowing thumbs up, a blue sign with a bold exclamation mark, and a red sign with a sharp X.",
+    "Students walk along a path, choosing which direction to follow at the crossroads of rules.",
     group="topics")
 
 # --- Listening illustrations ---
 img("listen-directions","topics/listen-directions.webp",
-    'The topic is "listening to directions". A person standing at a street crossroads looking at directional signs.',
+    "A person stands at a city crossroads, looking at glowing directional signs and floating map pins pointing different ways.",
+    "Buildings frame the scene, and blue navigation arrows hover in the air showing possible routes.",
     group="topics")
 
 img("listen-appearance","topics/listen-appearance.webp",
-    'The topic is "describing people". Two children looking at each other, one pointing at features like hair and eyes.',
+    "Two young characters face each other, with glowing blue holographic icons floating between them — icons of different hairstyles, eye colours, and heights.",
+    "They gesture at the icons as if describing each other, in a bright modern school courtyard.",
     group="topics")
 
 
