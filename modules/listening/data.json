@@ -1,0 +1,164 @@
+{
+  "title": "Listening",
+  "questionsPerSection": 8,
+  "units": [
+    {
+      "id": "unit6",
+      "title": "Unit 6",
+      "color": "rose",
+      "sections": [
+        {
+          "id": "directions",
+          "title": "Directions & Places",
+          "icon": "🗺️",
+          "color": "teal",
+          "type": "listen-write",
+          "instructions": "Listen to each sentence and type what you hear.",
+          "questions": [
+            { "sentence": "Go straight on and turn left at the traffic lights." },
+            { "sentence": "The bank is next to the supermarket." },
+            { "sentence": "Walk past the park and turn right." },
+            { "sentence": "The cinema is opposite the restaurant." },
+            { "sentence": "Go through the tunnel to reach the station." },
+            { "sentence": "The library is between the school and the post office." },
+            { "sentence": "Take the first turning on the left." },
+            { "sentence": "Walk along this street for about two hundred metres." },
+            { "sentence": "Go round the roundabout and take the second exit." },
+            { "sentence": "The hospital is at the end of this road." },
+            { "sentence": "The museum is next to the town hall." },
+            { "sentence": "Walk across the bridge to get to the park." }
+          ]
+        },
+        {
+          "id": "modals",
+          "title": "Rules & Advice",
+          "icon": "📋",
+          "color": "blue",
+          "type": "listen-choice",
+          "instructions": "Listen to the sentence and choose what you hear.",
+          "questions": [
+            { "sentence": "You must wear a school uniform.", "options": ["You must wear a school uniform.", "You should wear a school uniform.", "You can't wear a school uniform."] },
+            { "sentence": "You should eat more fruit.", "options": ["You must eat more fruit.", "You should eat more fruit.", "You can't eat more fruit."] },
+            { "sentence": "You mustn't use your phone in class.", "options": ["You mustn't use your phone in class.", "You should use your phone in class.", "You must use your phone in class."] },
+            { "sentence": "Students must be quiet in the library.", "options": ["Students should be quiet in the library.", "Students can't be quiet in the library.", "Students must be quiet in the library."] },
+            { "sentence": "You can't park here.", "options": ["You can't park here.", "You should park here.", "You must park here."] },
+            { "sentence": "You should take an umbrella.", "options": ["You must take an umbrella.", "You should take an umbrella.", "You can't take an umbrella."] },
+            { "sentence": "We have to get up early tomorrow.", "options": ["We should get up early tomorrow.", "We have to get up early tomorrow.", "We can't get up early tomorrow."] },
+            { "sentence": "You mustn't swim in this lake.", "options": ["You should swim in this lake.", "You mustn't swim in this lake.", "You must swim in this lake."] },
+            { "sentence": "Everyone must have a passport to travel abroad.", "options": ["Everyone should have a passport to travel abroad.", "Everyone can't have a passport to travel abroad.", "Everyone must have a passport to travel abroad."] },
+            { "sentence": "You shouldn't be late for school.", "options": ["You should be late for school.", "You shouldn't be late for school.", "You must be late for school."] }
+          ]
+        },
+        {
+          "id": "technology",
+          "title": "Technology",
+          "icon": "💻",
+          "color": "indigo",
+          "type": "listen-write",
+          "instructions": "Listen to each sentence and type what you hear.",
+          "questions": [
+            { "sentence": "I need to download this file from the Internet." },
+            { "sentence": "Open your browser and type the address." },
+            { "sentence": "You need a password to log in." },
+            { "sentence": "She put all her books in her rucksack." },
+            { "sentence": "I read the novel on my e-book." },
+            { "sentence": "You need wifi to connect to the Internet." },
+            { "sentence": "Can you copy this text and paste it here?" },
+            { "sentence": "Don't forget to bring your charger." },
+            { "sentence": "Use a search engine to find information online." },
+            { "sentence": "The keyboard and mouse are on the desk." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit7",
+      "title": "Unit 7",
+      "color": "blue",
+      "sections": [
+        {
+          "id": "jobs-listening",
+          "title": "Jobs",
+          "icon": "💼",
+          "color": "teal",
+          "type": "listen-write",
+          "instructions": "Listen to each sentence and type what you hear.",
+          "questions": [
+            { "sentence": "The waiter brought us our drinks." },
+            { "sentence": "She wants to be an actor when she grows up." },
+            { "sentence": "The cook made a delicious meal." },
+            { "sentence": "The driver took us to the airport." },
+            { "sentence": "The journalist wrote an article for the newspaper." },
+            { "sentence": "He is a photographer. He takes beautiful photos." },
+            { "sentence": "The artist painted a picture of the sunset." },
+            { "sentence": "The designer created a beautiful new dress." },
+            { "sentence": "The singer sang at the concert last night." },
+            { "sentence": "The acrobat performed amazing tricks at the circus." },
+            { "sentence": "My grandpa is a farmer. He grows vegetables." },
+            { "sentence": "The photographer uses a camera at work." }
+          ]
+        },
+        {
+          "id": "appearance-personality",
+          "title": "Appearance & Personality",
+          "icon": "👤",
+          "color": "rose",
+          "type": "listen-choice",
+          "instructions": "Listen to the sentence and choose what you hear.",
+          "questions": [
+            { "sentence": "What does he look like?", "options": ["What does he look like?", "What is he like?", "What does he like?"] },
+            { "sentence": "What is she like?", "options": ["What does she look like?", "What is she like?", "What does she like?"] },
+            { "sentence": "What does he like?", "options": ["What does he look like?", "What is he like?", "What does he like?"] },
+            { "sentence": "He's got short brown hair and blue eyes.", "options": ["He's got short brown hair and blue eyes.", "He's very friendly and kind.", "He likes playing football."] },
+            { "sentence": "She's very clever and interesting.", "options": ["She's got long hair.", "She's very clever and interesting.", "She likes reading books."] },
+            { "sentence": "He likes swimming and cycling.", "options": ["He's tall and strong.", "He's very brave.", "He likes swimming and cycling."] },
+            { "sentence": "She is kind and friendly.", "options": ["She's got blonde hair.", "She is kind and friendly.", "She likes dancing."] },
+            { "sentence": "He is lazy and unfriendly.", "options": ["He's got dark hair.", "He is lazy and unfriendly.", "He likes sleeping."] },
+            { "sentence": "She is popular and brave.", "options": ["She's got curly hair.", "She is popular and brave.", "She likes sports."] },
+            { "sentence": "My brother is very clever.", "options": ["My brother is very clever.", "My brother is very lazy.", "My brother is very unkind."] }
+          ]
+        },
+        {
+          "id": "zero-conditional-listening",
+          "title": "Zero Conditional",
+          "icon": "🔄",
+          "color": "blue",
+          "type": "listen-write",
+          "instructions": "Listen to each sentence and type what you hear.",
+          "questions": [
+            { "sentence": "If you heat ice, it melts." },
+            { "sentence": "When water reaches one hundred degrees, it boils." },
+            { "sentence": "If you don't water a plant, it dies." },
+            { "sentence": "When the sun goes down, it gets dark." },
+            { "sentence": "If you study hard, you get good marks." },
+            { "sentence": "When it rains, the streets get wet." },
+            { "sentence": "If you eat too much chocolate, you feel sick." },
+            { "sentence": "When you mix water and oil, they don't mix." },
+            { "sentence": "If you press the button, the door opens." },
+            { "sentence": "When a baby is hungry, it cries." }
+          ]
+        },
+        {
+          "id": "passive-voice-listening",
+          "title": "Passive Voice",
+          "icon": "📝",
+          "color": "purple",
+          "type": "listen-choice",
+          "instructions": "Listen to the sentence and choose what you hear.",
+          "questions": [
+            { "sentence": "English is spoken in many countries.", "options": ["English is spoken in many countries.", "English is speaking in many countries.", "English speaks in many countries."] },
+            { "sentence": "Cars are made in factories.", "options": ["Cars are made in factories.", "Cars make in factories.", "Cars is made in factories."] },
+            { "sentence": "The letters are delivered every morning.", "options": ["The letters are delivered every morning.", "The letters deliver every morning.", "The letters is delivered every morning."] },
+            { "sentence": "Football is played all over the world.", "options": ["Football is played all over the world.", "Football plays all over the world.", "Football are played all over the world."] },
+            { "sentence": "Rice is grown in China and India.", "options": ["Rice is grown in China and India.", "Rice grows in China and India.", "Rice are grown in China and India."] },
+            { "sentence": "The rooms are cleaned every day.", "options": ["The rooms are cleaned every day.", "The rooms clean every day.", "The rooms is cleaned every day."] },
+            { "sentence": "This book is read by millions of children.", "options": ["This book is read by millions of children.", "This book reads by millions of children.", "This book are read by millions of children."] },
+            { "sentence": "Bananas are grown in tropical countries.", "options": ["Bananas are grown in tropical countries.", "Bananas grow in tropical countries.", "Bananas is grown in tropical countries."] },
+            { "sentence": "The newspaper is printed every morning.", "options": ["The newspaper is printed every morning.", "The newspaper prints every morning.", "The newspaper are printed every morning."] },
+            { "sentence": "Cheese is made from milk.", "options": ["Cheese is made from milk.", "Cheese makes from milk.", "Cheese are made from milk."] }
+          ]
+        }
+      ]
+    }
+  ]
+}

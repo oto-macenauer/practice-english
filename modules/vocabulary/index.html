@@ -152,14 +152,15 @@
       font-size: 0.9rem;
       transition: background 0.15s, border-color 0.15s;
     }
-    .question .options button:hover:not(:disabled) {
+    .question .options button:hover:not(:disabled):not(.selected):not(.correct):not(.wrong) {
       border-color: var(--color-primary);
       background: #eff6ff;
     }
     .question .options button.selected {
       border-color: var(--color-primary);
-      background: var(--color-primary);
-      color: #fff;
+      background: #dbeafe;
+      color: var(--color-primary);
+      font-weight: 600;
     }
     .question .options button.correct {
       border-color: var(--color-success);
@@ -213,6 +214,7 @@
         <a href="../grammar/index.html">Grammar</a>
         <a href="../spelling/index.html">Spelling</a>
         <a href="../reading/index.html">Reading</a>
+        <a href="../listening/index.html">Listening</a>
         <a href="../practice-tests/index.html">Practice Tests</a>
       </nav>
     </div>

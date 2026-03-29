@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Reading – Practice English</title>
+  <title>Listening – Practice English</title>
   <link rel="stylesheet" href="../../css/style.css">
   <style>
     /* ===== Topic picker ===== */
@@ -121,28 +121,15 @@
     }
 
     /* Section accent colours */
+    .section-block[data-color="blue"]    .section-header { background: #3b82f6; }
+    .section-block[data-color="teal"]    .section-header { background: #14b8a6; }
+    .section-block[data-color="purple"]  .section-header { background: #8b5cf6; }
+    .section-block[data-color="orange"]  .section-header { background: #f97316; }
+    .section-block[data-color="indigo"]  .section-header { background: #6366f1; }
     .section-block[data-color="sky"]     .section-header { background: #0ea5e9; }
     .section-block[data-color="emerald"] .section-header { background: #10b981; }
     .section-block[data-color="rose"]    .section-header { background: #f43f5e; }
-    .section-block[data-color="indigo"]  .section-header { background: #6366f1; }
     .section-block[data-color="amber"]   .section-header { background: #f59e0b; }
-    .section-block[data-color="blue"]    .section-header { background: #3b82f6; }
-
-    /* ===== Reading passage ===== */
-    .reading-passage {
-      background: #f0f9ff;
-      border: 1px solid #bae6fd;
-      border-radius: var(--radius);
-      padding: 1rem 1.25rem;
-      margin-bottom: 1rem;
-      line-height: 1.8;
-    }
-    .reading-passage p {
-      margin-bottom: 0.75rem;
-    }
-    .reading-passage p:last-child {
-      margin-bottom: 0;
-    }
 
     /* ===== Questions ===== */
     .question {
@@ -167,6 +154,7 @@
       cursor: pointer;
       font-size: 0.9rem;
       transition: background 0.15s, border-color 0.15s;
+      text-align: left;
     }
     .question .options button:hover:not(:disabled):not(.selected):not(.correct):not(.wrong) {
       border-color: var(--color-primary);
@@ -189,6 +177,8 @@
       color: var(--color-error);
     }
 
+    .question input[type="text"] { max-width: 480px; }
+
     .question .result {
       margin-top: 0.4rem;
       font-size: 0.85rem;
@@ -197,6 +187,36 @@
     }
     .result.ok   { color: var(--color-success); }
     .result.fail { color: var(--color-error); }
+
+    /* ===== Listen button ===== */
+    .listen-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.4rem 0.9rem;
+      border: 1px solid var(--color-primary);
+      border-radius: var(--radius);
+      background: var(--color-surface);
+      color: var(--color-primary);
+      cursor: pointer;
+      font-size: 0.9rem;
+      font-weight: 600;
+      transition: background 0.15s;
+      margin-bottom: 0.5rem;
+    }
+    .listen-btn:hover {
+      background: #eff6ff;
+    }
+    .listen-btn:active {
+      background: #dbeafe;
+    }
+    .listen-btn .speaker-icon {
+      font-size: 1.1rem;
+    }
+    .listen-btn.speaking {
+      background: #dbeafe;
+      pointer-events: none;
+    }
 
     /* ===== Total score bar ===== */
     .score-bar {
@@ -217,6 +237,16 @@
       font-size: 1.1rem;
       font-weight: 700;
     }
+
+    .no-speech-warning {
+      background: #fef3c7;
+      border: 1px solid #fde68a;
+      border-radius: var(--radius);
+      padding: 1rem 1.25rem;
+      color: #92400e;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
   </style>
 </head>
 <body>
@@ -227,8 +257,8 @@
         <a href="../vocabulary/index.html">Vocabulary</a>
         <a href="../grammar/index.html">Grammar</a>
         <a href="../spelling/index.html">Spelling</a>
-        <a href="../reading/index.html" class="active">Reading</a>
-        <a href="../listening/index.html">Listening</a>
+        <a href="../reading/index.html">Reading</a>
+        <a href="../listening/index.html" class="active">Listening</a>
         <a href="../practice-tests/index.html">Practice Tests</a>
       </nav>
     </div>
@@ -236,8 +266,8 @@
 
   <main class="container">
     <div class="module-header">
-      <h1>📖 Reading</h1>
-      <p>Select passages to read, then answer comprehension questions.</p>
+      <h1>🎧 Listening</h1>
+      <p>Listen to sentences and type or choose what you hear.</p>
     </div>
 
     <div class="score-bar" id="score-bar">

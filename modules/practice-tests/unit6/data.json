@@ -148,7 +148,7 @@
       "id": "tech-vocab",
       "title": "Technology Vocabulary",
       "type": "match",
-      "instructions": "Match each technology word to its definition. These words come from the song 'My Brilliant Laptop'.",
+      "instructions": "Match each technology word to its definition.",
       "pairs": [
         { "prompt": "A small portable computer you can carry around.", "answer": "laptop" },
         { "prompt": "Small programs you can use on a phone or computer.", "answer": "apps" },
