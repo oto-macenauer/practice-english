@@ -3,6 +3,56 @@
   "questionsPerSection": 8,
   "units": [
     {
+      "id": "unit5",
+      "title": "Unit 5",
+      "color": "amber",
+      "sections": [
+        {
+          "id": "materials-listening",
+          "title": "Materials & Properties",
+          "icon": "🧱",
+          "color": "amber",
+          "image": "../../images/topics/unit5-passive.webp",
+          "type": "listen-write",
+          "instructions": "Listen to each sentence and type what you hear.",
+          "questions": [
+            { "sentence": "The scarf is made of wool." },
+            { "sentence": "The crown is made of gold." },
+            { "sentence": "This table is made of wood." },
+            { "sentence": "The windows are made of glass." },
+            { "sentence": "The eraser is made of rubber." },
+            { "sentence": "These balls are made of plastic." },
+            { "sentence": "The wings are made of paper." },
+            { "sentence": "My ring is made of silver." },
+            { "sentence": "The bricks are very heavy." },
+            { "sentence": "Plastic is flexible. You can bend it." },
+            { "sentence": "Paper is very light." },
+            { "sentence": "The table is rigid. It doesn't bend." }
+          ]
+        },
+        {
+          "id": "suggestions-listening",
+          "title": "Making Suggestions",
+          "icon": "💡",
+          "color": "purple",
+          "type": "listen-choice",
+          "instructions": "Listen to the sentence and choose what you hear.",
+          "questions": [
+            { "sentence": "Let's go to the cinema tonight.", "options": ["Let's go to the cinema tonight.", "Shall we go to the cinema tonight?", "We could go to the cinema tonight."] },
+            { "sentence": "Shall we make a mask for the play?", "options": ["Let's make a mask for the play.", "Shall we make a mask for the play?", "We could make a mask for the play."] },
+            { "sentence": "We could use blue paper for the sea.", "options": ["Let's use blue paper for the sea.", "Shall we use blue paper for the sea?", "We could use blue paper for the sea."] },
+            { "sentence": "Let's design some props!", "options": ["Let's design some props!", "Shall we design some props?", "We could design some props."] },
+            { "sentence": "Shall we watch a film?", "options": ["Let's watch a film.", "Shall we watch a film?", "We could watch a film."] },
+            { "sentence": "We could buy Julia a ring.", "options": ["Let's buy Julia a ring.", "Shall we buy Julia a ring?", "We could buy Julia a ring."] },
+            { "sentence": "Let's play hide and seek!", "options": ["Let's play hide and seek!", "Shall we play hide and seek?", "We could play hide and seek."] },
+            { "sentence": "Shall we have a party?", "options": ["Let's have a party.", "Shall we have a party?", "We could have a party."] },
+            { "sentence": "We could go swimming after school.", "options": ["Let's go swimming after school.", "Shall we go swimming after school?", "We could go swimming after school."] },
+            { "sentence": "Let's start the performance!", "options": ["Let's start the performance!", "Shall we start the performance?", "We could start the performance."] }
+          ]
+        }
+      ]
+    },
+    {
       "id": "unit6",
       "title": "Unit 6",
       "color": "rose",

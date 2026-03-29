@@ -3,6 +3,59 @@
   "questionsPerSection": 5,
   "units": [
     {
+      "id": "unit5",
+      "title": "Unit 5",
+      "color": "amber",
+      "sections": [
+        {
+          "id": "icarus",
+          "title": "The Myth of Icarus",
+          "icon": "🪶",
+          "color": "orange",
+          "type": "reading",
+          "instructions": "Read the myth of Icarus, then answer the questions.",
+          "passage": "One morning on the island of Crete, Icarus and his father Daedalus were in their workshop. Daedalus was an inventor. Suddenly, King Minos arrived and he spoke to Daedalus.\n\n'I'd like you to build me a labyrinth,' he said. 'I want to put the Minotaur inside it.' The Minotaur was a terrible monster. He had the head of a bull and the body of a man.\n\nKing Minos was pleased when he saw Daedalus's work. He put the Minotaur inside the labyrinth. Then he locked Daedalus and Icarus inside a tower. 'What are you doing?' said Daedalus. 'Well,' said the King, 'you know the secret of how to get out of the labyrinth. And I don't want anyone else to know it.'\n\nDaedalus and his son felt sad. Days passed, then Daedalus had an idea. He collected feathers from the birds that flew to the window of the tower. Then he made wings from a candle to stick the feathers together.\n\nDaedalus told Icarus what to do. 'Follow me. Don't go too high because the sun will melt the wax in your wings. Don't go too low because the sea will make the feathers in your wings wet. Are you ready? Go!' Daedalus and Icarus jumped out of the window. They flew away from the island, and away from King Minos.\n\nDaedalus flew in front. Icarus followed behind. Icarus loved flying. He was just like a bird! He forgot his father's words and he flew higher and higher. But as he got nearer to the sun, the wax between the feathers began to melt.\n\nWhen Daedalus looked behind him, he couldn't see his son. 'Icarus!' he shouted. 'Icarus! Where are you?' Daedalus looked down. There were feathers in the sea. Daedalus went to the nearest island. He sat and looked at the sea for a long time, and he felt sad for his son.",
+          "questions": [
+            { "question": "Where did Daedalus and Icarus live?", "options": ["On the island of Crete", "In Athens", "In Rome", "On the island of Sicily"], "answer": "On the island of Crete" },
+            { "question": "What was Daedalus?", "options": ["A king", "An inventor", "A soldier", "A teacher"], "answer": "An inventor" },
+            { "question": "What did King Minos want Daedalus to build?", "options": ["A castle", "A labyrinth", "A tower", "A bridge"], "answer": "A labyrinth" },
+            { "question": "What was the Minotaur?", "options": ["A dragon", "A monster with a bull's head and man's body", "A giant bird", "A horse"], "answer": "A monster with a bull's head and man's body" },
+            { "question": "Why did King Minos lock Daedalus and Icarus in a tower?", "options": ["They were dangerous", "Daedalus knew the secret of the labyrinth", "They tried to escape", "They helped the Minotaur"], "answer": "Daedalus knew the secret of the labyrinth" },
+            { "question": "What did Daedalus use to make wings?", "options": ["Wood and string", "Feathers and wax", "Paper and glue", "Metal and cloth"], "answer": "Feathers and wax" },
+            { "question": "What did Daedalus tell Icarus NOT to do?", "options": ["Don't fly too high or too low", "Don't look down", "Don't fly at night", "Don't fly over the sea"], "answer": "Don't fly too high or too low" },
+            { "question": "Why shouldn't Icarus fly too high?", "options": ["The wind was too strong", "The sun would melt the wax", "He would get lost", "The birds would attack him"], "answer": "The sun would melt the wax" },
+            { "question": "What happened to Icarus?", "options": ["He flew to safety", "The wax melted and he fell into the sea", "He returned to the tower", "He landed on another island"], "answer": "The wax melted and he fell into the sea" },
+            { "question": "Why did Icarus fly too high?", "options": ["He was scared", "He loved flying and forgot his father's words", "The wind pushed him up", "He wanted to touch the sun"], "answer": "He loved flying and forgot his father's words" },
+            { "question": "What did Daedalus find in the sea?", "options": ["Icarus", "The wings", "Feathers", "Wax"], "answer": "Feathers" },
+            { "question": "How did Daedalus feel at the end of the story?", "options": ["Happy", "Angry", "Sad", "Excited"], "answer": "Sad" }
+          ]
+        },
+        {
+          "id": "theatre-workshop",
+          "title": "A Theatre Workshop",
+          "icon": "🎭",
+          "color": "emerald",
+          "type": "reading",
+          "instructions": "Read the text about the theatre workshop, then answer the questions.",
+          "passage": "In our drama group, we use different materials to make our costumes, props and sets. We use materials with different properties. Some materials are flexible and light. Some materials are rigid and strong. It's important to use materials that are safe.\n\nWe make masks with papier-mâché. It's flexible and light because it is made of paper, glue and water. You can paint the masks and decorate them with lots of different things.\n\nToday we're making Greek masks. Theatre was very important in Ancient Greece. Most cities had a theatre and people went there to watch comedies (funny shows) or tragedies (sad or serious shows). The actors used masks to show different emotions more clearly. Some masks were double-sided, which means they could have one face on one side and a different one on the other side. Let's make happy and sad double-sided masks!\n\nTo make a mask, you need newspaper cut into strips. Mix some white glue in a bowl with water. Put the paper strips one by one into the bowl and cover them with glue. Put the strips on a plastic shape, like a balloon. When it's dry, paint it and decorate it.",
+          "questions": [
+            { "question": "What does the drama group make?", "options": ["Only costumes", "Costumes, props and sets", "Only masks", "Only sets"], "answer": "Costumes, props and sets" },
+            { "question": "What is papier-mâché made of?", "options": ["Paper, glue and water", "Wood and paint", "Plastic and metal", "Card and tape"], "answer": "Paper, glue and water" },
+            { "question": "What are the properties of papier-mâché?", "options": ["Heavy and rigid", "Flexible and light", "Rough and heavy", "Smooth and rigid"], "answer": "Flexible and light" },
+            { "question": "Where was theatre very important in ancient times?", "options": ["In Rome", "In Egypt", "In Greece", "In China"], "answer": "In Greece" },
+            { "question": "What did people watch at the theatre?", "options": ["Films", "Comedies and tragedies", "Music concerts", "Sports"], "answer": "Comedies and tragedies" },
+            { "question": "Why did actors use masks?", "options": ["To hide their faces", "To show different emotions clearly", "To look scary", "To keep warm"], "answer": "To show different emotions clearly" },
+            { "question": "What were double-sided masks?", "options": ["Masks with two different faces", "Masks for two people", "Masks made of two materials", "Masks worn twice"], "answer": "Masks with two different faces" },
+            { "question": "What do you put the paper strips on?", "options": ["A table", "A plastic shape like a balloon", "A piece of wood", "A metal frame"], "answer": "A plastic shape like a balloon" },
+            { "question": "What is a comedy?", "options": ["A sad show", "A funny show", "A scary show", "A musical show"], "answer": "A funny show" },
+            { "question": "What is a tragedy?", "options": ["A funny show", "A sad or serious show", "A happy show", "A short show"], "answer": "A sad or serious show" },
+            { "question": "What do you do after the mask is dry?", "options": ["Throw it away", "Paint and decorate it", "Cover it with more paper", "Put it in water"], "answer": "Paint and decorate it" },
+            { "question": "Why is it important to use safe materials?", "options": ["So they look nice", "Because the text says so", "So nobody gets hurt", "So they are cheap"], "answer": "So nobody gets hurt" }
+          ]
+        }
+      ]
+    },
+    {
       "id": "unit6",
       "title": "Unit 6",
       "color": "rose",

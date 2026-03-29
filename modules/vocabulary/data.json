@@ -3,6 +3,94 @@
   "questionsPerSection": 8,
   "units": [
     {
+      "id": "unit5",
+      "title": "Unit 5",
+      "color": "amber",
+      "sections": [
+        {
+          "id": "materials",
+          "title": "Materials",
+          "icon": "🧱",
+          "color": "amber",
+          "image": "../../images/topics/unit5-passive.webp",
+          "type": "match",
+          "instructions": "Match each description to the correct material.",
+          "pairs": [
+            { "prompt": "Scissors and knives are made of this hard, shiny material.", "answer": "metal" },
+            { "prompt": "Windows are made of this transparent material.", "answer": "glass" },
+            { "prompt": "Bottles and bags can be made of this light, cheap material.", "answer": "plastic" },
+            { "prompt": "Scarves and jumpers are made of this warm material from sheep.", "answer": "wool" },
+            { "prompt": "Tables and chairs are often made of this material from trees.", "answer": "wood" },
+            { "prompt": "Birthday cards and boxes are made of this thick paper.", "answer": "card" },
+            { "prompt": "Books and newspapers are made of this thin, light material.", "answer": "paper" },
+            { "prompt": "Crowns and expensive rings are sometimes made of this yellow precious material.", "answer": "gold" },
+            { "prompt": "This grey-white precious material is used for jewellery.", "answer": "silver" },
+            { "prompt": "Erasers and tyres are made of this stretchy, bouncy material.", "answer": "rubber" },
+            { "prompt": "This material is very strong. Keys, forks and coins are made of it.", "answer": "metal" },
+            { "prompt": "This material grows in forests and is used for furniture.", "answer": "wood" },
+            { "prompt": "This material is flexible, waterproof and can stretch.", "answer": "rubber" },
+            { "prompt": "Mirrors are made with this transparent, smooth material.", "answer": "glass" },
+            { "prompt": "Toys and containers are often made of this waterproof material.", "answer": "plastic" }
+          ]
+        },
+        {
+          "id": "properties",
+          "title": "Properties of Materials",
+          "icon": "⚖️",
+          "color": "teal",
+          "type": "match",
+          "instructions": "Match each description to the correct property.",
+          "pairs": [
+            { "prompt": "This property means something weighs a lot.", "answer": "heavy" },
+            { "prompt": "This property means something doesn't bend.", "answer": "rigid" },
+            { "prompt": "This property means something can bend easily.", "answer": "flexible" },
+            { "prompt": "This property means something doesn't weigh much.", "answer": "light" },
+            { "prompt": "This property means a surface is uneven and not smooth.", "answer": "rough" },
+            { "prompt": "This property means a surface is even and nice to touch.", "answer": "smooth" },
+            { "prompt": "The opposite of heavy.", "answer": "light" },
+            { "prompt": "The opposite of smooth.", "answer": "rough" },
+            { "prompt": "The opposite of rigid.", "answer": "flexible" },
+            { "prompt": "Gold and bricks have this property — they weigh a lot.", "answer": "heavy" },
+            { "prompt": "Paper and feathers have this property — they don't weigh much.", "answer": "light" },
+            { "prompt": "Rubber and wool have this property — they can bend.", "answer": "flexible" },
+            { "prompt": "Wood and metal often have this property — they don't bend.", "answer": "rigid" },
+            { "prompt": "Sandpaper has this surface property.", "answer": "rough" },
+            { "prompt": "Glass and polished metal have this surface property.", "answer": "smooth" }
+          ]
+        },
+        {
+          "id": "vocab-context",
+          "title": "Vocabulary in Context",
+          "icon": "✏️",
+          "color": "rose",
+          "type": "fill-choice",
+          "instructions": "Choose the correct word to complete each sentence.",
+          "questions": [
+            { "sentence": "The scarf is made of ___. It's very warm and soft.", "options": ["wool", "metal", "glass", "rubber"], "answer": "wool" },
+            { "sentence": "Be careful! The vase is made of ___. It can break easily.", "options": ["glass", "rubber", "wool", "wood"], "answer": "glass" },
+            { "sentence": "She's wearing a ___ orange skirt. The colour is very vivid.", "options": ["bright", "dark", "spotted", "striped"], "answer": "bright" },
+            { "sentence": "The zebra costume has black and white ___.", "options": ["stripes", "spots", "wings", "dots"], "answer": "stripes" },
+            { "sentence": "The ladybird costume is red with black ___.", "options": ["spots", "stripes", "wings", "lines"], "answer": "spots" },
+            { "sentence": "My helmet is ___ of gold paper.", "options": ["made", "wore", "dressed", "done"], "answer": "made" },
+            { "sentence": "This table is made of ___. It came from a tree.", "options": ["wood", "metal", "glass", "paper"], "answer": "wood" },
+            { "sentence": "The tyres are made of ___. They are bouncy and flexible.", "options": ["rubber", "wood", "glass", "card"], "answer": "rubber" },
+            { "sentence": "___ we make costumes for the show?", "options": ["Shall", "Let", "Can't", "Must"], "answer": "Shall" },
+            { "sentence": "___ go to the cinema tonight!", "options": ["Let's", "Shall", "Could", "We"], "answer": "Let's" },
+            { "sentence": "___ use blue paper for the sky.", "options": ["We could", "Shall", "Let's we", "Must"], "answer": "We could" },
+            { "sentence": "The mask is made of papier-mâché — that's ___, glue and water.", "options": ["paper", "metal", "plastic", "wood"], "answer": "paper" },
+            { "sentence": "He's ___ a striped shirt and dark trousers.", "options": ["wearing", "making", "doing", "having"], "answer": "wearing" },
+            { "sentence": "The brick is very ___. It doesn't bend at all.", "options": ["rigid", "flexible", "light", "smooth"], "answer": "rigid" },
+            { "sentence": "This feather is very ___. It weighs almost nothing.", "options": ["light", "heavy", "rough", "rigid"], "answer": "light" },
+            { "sentence": "The fairy costume has beautiful ___ on the back.", "options": ["wings", "spots", "stripes", "hats"], "answer": "wings" },
+            { "sentence": "The crown is made of ___. It's shiny and yellow.", "options": ["gold", "silver", "wood", "paper"], "answer": "gold" },
+            { "sentence": "She's wearing a ___ green dress — almost black.", "options": ["dark", "bright", "spotted", "striped"], "answer": "dark" },
+            { "sentence": "A ___ is a sad or serious show at the theatre.", "options": ["tragedy", "comedy", "concert", "festival"], "answer": "tragedy" },
+            { "sentence": "Sandpaper has a ___ surface.", "options": ["rough", "smooth", "flexible", "light"], "answer": "rough" }
+          ]
+        }
+      ]
+    },
+    {
       "id": "unit6",
       "title": "Unit 6",
       "color": "rose",
