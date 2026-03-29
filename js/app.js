@@ -140,3 +140,23 @@ const App = (() => {
 
   return { pickRandom, shuffle, showFeedback, hideFeedback, loadJSON, saveScore, getScores, clearScores, getDifficulty, setDifficulty, getQuestionCount, buildDifficultySelector };
 })();
+
+App.initTheme = function() {
+  var saved = localStorage.getItem("theme");
+  var prefer = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  var theme = saved || prefer;
+  document.documentElement.setAttribute("data-theme", theme);
+  var meta = document.querySelector('meta[name="theme-color"]');
+  if (meta) meta.content = theme === "dark" ? "#0f172a" : "#2563eb";
+};
+
+App.toggleTheme = function() {
+  var current = document.documentElement.getAttribute("data-theme");
+  var next = current === "dark" ? "light" : "dark";
+  document.documentElement.setAttribute("data-theme", next);
+  localStorage.setItem("theme", next);
+  var meta = document.querySelector('meta[name="theme-color"]');
+  if (meta) meta.content = next === "dark" ? "#0f172a" : "#2563eb";
+};
+
+App.initTheme();
