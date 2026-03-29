@@ -221,6 +221,22 @@
       ]
     },
     {
+      "id": "listening",
+      "title": "Listening",
+      "type": "listen-comprehension",
+      "instructions": "Press Listen, then answer the question about what you heard.",
+      "questions": [
+        { "sentence": "The photographer takes photos of animals in the wild.", "question": "What does the photographer take photos of?", "options": ["Animals", "Buildings", "People"], "answer": "Animals" },
+        { "sentence": "She's got long brown hair and green eyes.", "question": "What colour are her eyes?", "options": ["Green", "Brown", "Blue"], "answer": "Green" },
+        { "sentence": "If you heat water to one hundred degrees, it boils.", "question": "What happens at 100 degrees?", "options": ["Water boils", "Water freezes", "Water melts"], "answer": "Water boils" },
+        { "sentence": "He's very lazy. He never helps with the housework.", "question": "Does he help at home?", "options": ["No, never", "Yes, always", "Sometimes"], "answer": "No, never" },
+        { "sentence": "English is spoken in many countries around the world.", "question": "How widely is English spoken?", "options": ["In many countries", "Only in England", "In two countries"], "answer": "In many countries" },
+        { "sentence": "The waiter brought three drinks and two salads to the table.", "question": "How many drinks did he bring?", "options": ["Three", "Two", "Five"], "answer": "Three" },
+        { "sentence": "What is your sister like? She's friendly and clever.", "question": "Is this about looks or personality?", "options": ["Personality", "Looks", "Hobbies"], "answer": "Personality" },
+        { "sentence": "When the sun goes down, it gets dark outside.", "question": "What causes darkness?", "options": ["The sun setting", "Clouds", "Rain"], "answer": "The sun setting" }
+      ]
+    },
+    {
       "id": "altamira-caves",
       "title": "Reading: The Altamira Caves",
       "type": "reading",

@@ -6,6 +6,7 @@
     subjects:      { icon: "🏫", color: "purple",  image: IMG + "unit6-subjects.webp" },
     "good-at":     { icon: "⭐", color: "orange" },
     "tech-vocab":  { icon: "💻", color: "indigo",  image: IMG + "unit6-technology.webp" },
+    listening:     { icon: "🎧", color: "sky" },
     cappadocia:    { icon: "🏔️", color: "sky" },
     "the-project": { icon: "📚", color: "emerald" },
     "barrier-reef":{ icon: "🐠", color: "sky" },
@@ -92,6 +93,13 @@
       const questions = App.shuffle([...section.questions]).slice(0, PICK);
       questions.forEach((q, qi) => {
         body.appendChild(buildWriteQuestion(qi, q, items));
+      });
+    }
+
+    if (section.type === "listen-comprehension") {
+      const questions = App.shuffle([...section.questions]).slice(0, PICK);
+      questions.forEach((q, qi) => {
+        body.appendChild(buildListenQuestion(qi, q, items));
       });
     }
 
@@ -346,6 +354,76 @@
       });
     });
 
+    return div;
+  }
+
+  function buildListenQuestion(index, q, items) {
+    const div = document.createElement("div");
+    div.className = "question";
+    const row = document.createElement("div");
+    row.style.display = "flex";
+    row.style.alignItems = "center";
+    row.style.gap = "0.5rem";
+    row.style.marginBottom = "0.5rem";
+    const num = document.createElement("span");
+    num.textContent = (index + 1) + ".";
+    num.style.fontWeight = "600";
+    row.appendChild(num);
+    const listenBtn = document.createElement("button");
+    listenBtn.className = "listen-btn";
+    listenBtn.type = "button";
+    listenBtn.innerHTML = '<span class="speaker-icon">🔊</span> Listen';
+    listenBtn.addEventListener("click", () => {
+      if (!("speechSynthesis" in window)) return;
+      window.speechSynthesis.cancel();
+      const u = new SpeechSynthesisUtterance(q.sentence);
+      u.lang = "en-GB"; u.rate = 0.85;
+      const v = window.speechSynthesis.getVoices();
+      const ev = v.find(x => x.lang.startsWith("en-GB")) || v.find(x => x.lang.startsWith("en"));
+      if (ev) u.voice = ev;
+      u.onstart = () => listenBtn.classList.add("speaking");
+      u.onend = () => listenBtn.classList.remove("speaking");
+      u.onerror = () => listenBtn.classList.remove("speaking");
+      window.speechSynthesis.speak(u);
+    });
+    row.appendChild(listenBtn);
+    div.appendChild(row);
+    const qp = document.createElement("p");
+    qp.textContent = q.question;
+    qp.style.fontWeight = "500";
+    qp.style.marginBottom = "0.5rem";
+    div.appendChild(qp);
+    const optBox = document.createElement("div");
+    optBox.className = "options";
+    const result = document.createElement("div");
+    result.className = "result";
+    let selected = null;
+    App.shuffle([...q.options]).forEach((opt) => {
+      const btn = document.createElement("button");
+      btn.textContent = opt;
+      btn.addEventListener("click", () => {
+        optBox.querySelectorAll("button").forEach((b) => b.classList.remove("selected"));
+        btn.classList.add("selected");
+        selected = opt;
+      });
+      optBox.appendChild(btn);
+    });
+    div.appendChild(optBox);
+    div.appendChild(result);
+    items.push({
+      check() {
+        const correct = selected === q.answer;
+        optBox.querySelectorAll("button").forEach((b) => {
+          b.classList.remove("selected");
+          b.disabled = true;
+          if (b.textContent === q.answer) b.classList.add("correct");
+          else if (b.textContent === selected && !correct) b.classList.add("wrong");
+        });
+        result.textContent = correct ? "✓ Correct!" : `✗ Answer: ${q.answer}`;
+        result.className = "result " + (correct ? "ok" : "fail");
+        return correct;
+      },
+    });
     return div;
   }
 

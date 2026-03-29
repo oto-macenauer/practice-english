@@ -190,6 +190,26 @@
       display: none;
     }
 
+    /* ===== Listen button ===== */
+    .listen-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.4rem 0.9rem;
+      border: 1px solid var(--color-primary);
+      border-radius: var(--radius);
+      background: var(--color-surface);
+      color: var(--color-primary);
+      cursor: pointer;
+      font-size: 0.9rem;
+      font-weight: 600;
+      transition: background 0.15s;
+    }
+    .listen-btn:hover { background: #eff6ff; }
+    .listen-btn:active { background: #dbeafe; }
+    .listen-btn .speaker-icon { font-size: 1.1rem; }
+    .listen-btn.speaking { background: #dbeafe; pointer-events: none; }
+
     /* ===== Total score bar ===== */
     .score-bar {
       display: flex;

@@ -77,7 +77,7 @@
 
         const badge = document.createElement("span");
         badge.className = "topic-count";
-        badge.textContent = count + " sentences";
+        badge.textContent = count + " questions";
         label.appendChild(badge);
 
         list.appendChild(label);
@@ -168,20 +168,11 @@
       body.innerHTML = `<p class="instructions">${esc(section.instructions)}</p>`;
 
       const items = [];
-
       const questions = App.shuffle([...section.questions]).slice(0, PICK);
 
-      if (section.type === "listen-write") {
-        questions.forEach((q, qi) => {
-          body.appendChild(buildListenWriteQuestion(qi, q, items));
-        });
-      }
-
-      if (section.type === "listen-choice") {
-        questions.forEach((q, qi) => {
-          body.appendChild(buildListenChoiceQuestion(qi, q, items));
-        });
-      }
+      questions.forEach((q, qi) => {
+        body.appendChild(buildListenQuestion(qi, q, items));
+      });
 
       block.appendChild(body);
 
@@ -220,10 +211,11 @@
 
   // ========== Builders ==========
 
-  function buildListenWriteQuestion(index, q, items) {
+  function buildListenQuestion(index, q, items) {
     const div = document.createElement("div");
     div.className = "question";
 
+    // Listen button row
     const row = document.createElement("div");
     row.style.display = "flex";
     row.style.alignItems = "center";
@@ -240,54 +232,16 @@
 
     div.appendChild(row);
 
-    const input = document.createElement("input");
-    input.type = "text";
-    input.placeholder = "Type what you hear…";
-    input.autocomplete = "off";
-    div.appendChild(input);
+    // Question text
+    const questionP = document.createElement("p");
+    questionP.textContent = q.question;
+    questionP.style.fontWeight = "500";
+    questionP.style.marginBottom = "0.5rem";
+    div.appendChild(questionP);
 
-    const result = document.createElement("div");
-    result.className = "result";
-    div.appendChild(result);
-
-    items.push({
-      check() {
-        const correct = normalize(input.value) === normalize(q.sentence);
-        result.textContent = correct
-          ? "✓ Correct!"
-          : `✗ Answer: ${q.sentence}`;
-        result.className = "result " + (correct ? "ok" : "fail");
-        input.disabled = true;
-        return correct;
-      },
-    });
-
-    return div;
-  }
-
-  function buildListenChoiceQuestion(index, q, items) {
-    const div = document.createElement("div");
-    div.className = "question";
-
-    const row = document.createElement("div");
-    row.style.display = "flex";
-    row.style.alignItems = "center";
-    row.style.gap = "0.5rem";
-    row.style.marginBottom = "0.5rem";
-
-    const num = document.createElement("span");
-    num.textContent = (index + 1) + ".";
-    num.style.fontWeight = "600";
-    row.appendChild(num);
-
-    const listenBtn = createListenButton(q.sentence);
-    row.appendChild(listenBtn);
-
-    div.appendChild(row);
-
+    // Options
     const optBox = document.createElement("div");
     optBox.className = "options";
-    optBox.style.flexDirection = "column";
 
     const result = document.createElement("div");
     result.className = "result";
@@ -297,7 +251,6 @@
     App.shuffle([...q.options]).forEach((opt) => {
       const btn = document.createElement("button");
       btn.textContent = opt;
-      btn.style.width = "100%";
       btn.addEventListener("click", () => {
         optBox
           .querySelectorAll("button")
@@ -313,17 +266,17 @@
 
     items.push({
       check() {
-        const correct = selected === q.sentence;
+        const correct = selected === q.answer;
         optBox.querySelectorAll("button").forEach((b) => {
           b.classList.remove("selected");
           b.disabled = true;
-          if (b.textContent === q.sentence) b.classList.add("correct");
+          if (b.textContent === q.answer) b.classList.add("correct");
           else if (b.textContent === selected && !correct)
             b.classList.add("wrong");
         });
         result.textContent = correct
           ? "✓ Correct!"
-          : `✗ Answer: ${q.sentence}`;
+          : `✗ Answer: ${q.answer}`;
         result.className = "result " + (correct ? "ok" : "fail");
         return correct;
       },
@@ -350,7 +303,6 @@
   function speak(text, btn) {
     if (!speechSupported) return;
 
-    // Cancel any ongoing speech
     window.speechSynthesis.cancel();
 
     const utterance = new SpeechSynthesisUtterance(text);
@@ -358,7 +310,6 @@
     utterance.rate = 0.85;
     utterance.pitch = 1;
 
-    // Try to pick an English voice
     const voices = window.speechSynthesis.getVoices();
     const enVoice = voices.find(
       (v) => v.lang.startsWith("en") && v.name.includes("Female")
@@ -379,14 +330,5 @@
     const d = document.createElement("div");
     d.textContent = str;
     return d.innerHTML;
-  }
-
-  function normalize(str) {
-    return str
-      .toLowerCase()
-      .replace(/['']/g, "'")
-      .replace(/[.,!?;:]/g, "")
-      .replace(/\s+/g, " ")
-      .trim();
   }
 })();

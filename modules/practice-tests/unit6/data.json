@@ -183,6 +183,22 @@
       ]
     },
     {
+      "id": "listening",
+      "title": "Listening",
+      "type": "listen-comprehension",
+      "instructions": "Press Listen, then answer the question about what you heard.",
+      "questions": [
+        { "sentence": "Go straight on and turn left at the traffic lights.", "question": "Where do you turn?", "options": ["At the traffic lights", "At the roundabout", "At the bridge"], "answer": "At the traffic lights" },
+        { "sentence": "You mustn't use your phone during the exam.", "question": "Can you use your phone?", "options": ["No, it's forbidden", "Yes, sometimes", "Only for calls"], "answer": "No, it's forbidden" },
+        { "sentence": "The library is between the school and the post office.", "question": "What is on each side of the library?", "options": ["School and post office", "Bank and cinema", "Park and shop"], "answer": "School and post office" },
+        { "sentence": "You should drink more water. It's good for you.", "question": "Is this a rule or advice?", "options": ["Advice", "A strict rule", "A warning"], "answer": "Advice" },
+        { "sentence": "I need to download this file from the Internet to my laptop.", "question": "Where is the file going?", "options": ["To the laptop", "To the Internet", "To a USB stick"], "answer": "To the laptop" },
+        { "sentence": "Walk past the cinema and the hospital is on your right.", "question": "Where is the hospital?", "options": ["Past the cinema, on the right", "Opposite the cinema", "Next to the cinema"], "answer": "Past the cinema, on the right" },
+        { "sentence": "We have to wear a uniform. The headteacher said so.", "question": "Who made this rule?", "options": ["The headteacher", "The students", "The parents"], "answer": "The headteacher" },
+        { "sentence": "Use a search engine like Google to find information.", "question": "What is Google?", "options": ["A search engine", "A browser", "An email app"], "answer": "A search engine" }
+      ]
+    },
+    {
       "id": "cappadocia",
       "title": "Reading: Cappadocia",
       "type": "reading",

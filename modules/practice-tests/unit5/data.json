@@ -168,6 +168,22 @@
       ]
     },
     {
+      "id": "listening",
+      "title": "Listening",
+      "type": "listen-comprehension",
+      "instructions": "Press Listen, then answer the question about what you heard.",
+      "questions": [
+        { "sentence": "The mask is made of papier-mâché. It's flexible and light.", "question": "What are TWO properties of the mask?", "options": ["Flexible and light", "Heavy and rigid", "Rough and dark"], "answer": "Flexible and light" },
+        { "sentence": "Shall we use gold paper for the crown?", "question": "What is the speaker suggesting?", "options": ["Using gold paper", "Buying a crown", "Painting the crown"], "answer": "Using gold paper" },
+        { "sentence": "The costume wings are made of paper, so be careful with them.", "question": "Why should you be careful?", "options": ["Paper tears easily", "They are heavy", "They are sharp"], "answer": "Paper tears easily" },
+        { "sentence": "We could recycle old T-shirts to make the costumes.", "question": "What will they use for costumes?", "options": ["Old T-shirts", "New fabric", "Paper bags"], "answer": "Old T-shirts" },
+        { "sentence": "The bricks are heavy and rough. They're used for building walls.", "question": "What are bricks used for?", "options": ["Building walls", "Making roads", "Decorating rooms"], "answer": "Building walls" },
+        { "sentence": "Let's design the set for the school play together!", "question": "What does the speaker want to do together?", "options": ["Design the set", "Write the script", "Learn the lines"], "answer": "Design the set" },
+        { "sentence": "Glass is smooth but it breaks easily, so handle it with care.", "question": "What is the problem with glass?", "options": ["It breaks easily", "It's too heavy", "It's too rough"], "answer": "It breaks easily" },
+        { "sentence": "The rubber ball bounced because rubber is flexible.", "question": "Why did the ball bounce?", "options": ["Rubber is flexible", "Rubber is rigid", "Rubber is heavy"], "answer": "Rubber is flexible" }
+      ]
+    },
+    {
       "id": "icarus",
       "title": "Reading: The Myth of Icarus",
       "type": "reading",
