@@ -68,9 +68,11 @@ MODEL_MAP = {
 }
 
 STYLE_PREFIX = (
-    "Flat vector illustration, bright cheerful colours, simple shapes, "
-    "child-friendly educational style, white background, no text, no words, "
-    "no letters, clean minimal design. "
+    "Create an educational app illustration. "
+    "Positive and energetic atmosphere, comic book art style inspired by DC Comics, "
+    "muted color palette with shades of gray and brown, detailed line work, "
+    "cinematic composition, high contrast. "
+    "Avoid using labels and texts. "
 )
 
 # ---------------------------------------------------------------------------
@@ -86,82 +88,82 @@ def img(id: str, path: str, prompt: str, group: str = "misc"):
 
 # --- Module cards (homepage) ---
 img("mod-vocabulary",  "modules/vocabulary.webp",
-    "A stack of colourful flashcards with simple pictures on them, word bubbles floating around, learning vocabulary concept.",
+    'The topic is "vocabulary". A stack of flashcards with simple pictures, word bubbles floating around.',
     group="modules")
 
 img("mod-grammar",     "modules/grammar.webp",
-    "A large friendly pencil writing on lined paper, with colourful sentence parts (subject, verb, object) highlighted in different colours.",
+    'The topic is "grammar". A pencil writing on lined paper, sentence parts highlighted in different colours.',
     group="modules")
 
 img("mod-spelling",    "modules/spelling.webp",
-    "Colourful wooden letter blocks A B C scattered playfully, a child's hand placing a letter, spelling bee concept.",
+    'The topic is "spelling". Wooden letter blocks scattered playfully, a child placing a block.',
     group="modules")
 
 img("mod-reading",     "modules/reading.webp",
-    "A happy child sitting cross-legged reading a big open book, colourful illustrations flying out of the pages.",
+    'The topic is "reading". A child sitting cross-legged reading a big open book, illustrations flying out of the pages.',
     group="modules")
 
 img("mod-listening",   "modules/listening.webp",
-    "A pair of bright headphones with colourful sound waves and musical notes coming out, listening and audio concept.",
+    'The topic is "listening". A pair of headphones with sound waves and musical notes coming out.',
     group="modules")
 
 img("mod-tests",       "modules/tests.webp",
-    "A test paper with green checkmarks and a gold star sticker, a pencil beside it, school exam concept.",
+    'The topic is "practice tests". A test paper with checkmarks and a gold star, a pencil beside it.',
     group="modules")
 
 # --- Unit 7 topic illustrations ---
 img("topic-jobs",      "topics/unit7-jobs.webp",
-    "A group of diverse workers standing together: a chef in white hat, a photographer with camera, a waiter with tray, a singer with microphone, a farmer with pitchfork. Cartoon style.",
+    'The topic is "jobs and professions". A group of diverse workers: a chef in white hat, a photographer with camera, a waiter with tray, a singer with microphone, a farmer with pitchfork.',
     group="topics")
 
 img("topic-adjectives","topics/unit7-adjectives.webp",
-    "Six cartoon faces showing different personality traits: one kind and smiling, one clever with glasses, one lazy yawning, one brave with a cape, one friendly waving, one popular surrounded by friends.",
+    'The topic is "personality adjectives". Six faces showing traits: kind and smiling, clever with glasses, lazy yawning, brave and strong, friendly waving, popular surrounded by friends.',
     group="topics")
 
 img("topic-zero-cond", "topics/unit7-zero-conditional.webp",
-    "A simple cause-and-effect diagram: on the left the sun shining on ice, an arrow in the middle, on the right a puddle of water. Science experiment feel.",
+    'The topic is "zero conditional / cause and effect". On the left the sun shining on ice, an arrow in the middle, on the right a puddle of water. Science experiment feel.',
     group="topics")
 
 img("topic-look-like", "topics/unit7-look-like.webp",
-    "A cartoon family portrait showing people with different features: tall dad with brown hair, short mum with blonde hair, child with curly red hair, grandma with glasses. Appearance and description concept.",
+    'The topic is "describing appearance". A family portrait: tall dad with brown hair, short mum with blonde hair, child with curly red hair, grandma with glasses.',
     group="topics")
 
 img("topic-passive",   "topics/unit5-passive.webp",
-    "A factory conveyor belt with cars being assembled by robot arms, showing the concept of 'cars are made in factories', passive voice illustration.",
+    'The topic is "passive voice / materials". A factory conveyor belt with cars being assembled by robot arms.',
     group="topics")
 
 img("topic-subjects",  "topics/unit6-subjects.webp",
-    "A circle of school subject icons: a flask for science, a paintbrush for art, a football for sports, a musical note for music, a globe for geography, a calculator for maths.",
+    'The topic is "school subjects". Icons in a circle: a flask for science, a paintbrush for art, a football for sports, a musical note for music, a globe for geography, a calculator for maths.',
     group="topics")
 
 img("topic-altamira",  "topics/unit7-altamira.webp",
-    "Inside a dimly lit cave with prehistoric cave paintings of bison and horses on the rocky walls, warm torchlight illuminating the ancient art. Altamira Caves in Spain.",
+    'The topic is "archaeology and cave paintings". Inside a dimly lit cave with prehistoric paintings of bison and horses on rocky walls, warm torchlight illuminating the ancient art.',
     group="topics")
 
 img("topic-quixote",   "topics/unit7-quixote.webp",
-    "Don Quixote on his horse charging at windmills in a sunny Spanish landscape, Sancho Panza watching from behind, cartoon adventure style.",
+    'The topic is "Don Quixote". A knight on his horse charging at windmills in a sunny Spanish landscape, his friend watching from behind.',
     group="topics")
 
 # --- Unit 6 topic illustrations ---
 img("topic-maps",      "topics/unit6-maps.webp",
-    "A colourful treasure-style map with a compass rose, dotted path, landmarks like a school, park, library, and directional arrows.",
+    'The topic is "maps and directions". A treasure-style map with a compass rose, dotted path, landmarks like a school, park, library.',
     group="topics")
 
 img("topic-technology","topics/unit6-technology.webp",
-    "A laptop, tablet and smartphone arranged on a desk with wifi symbol, download arrow, and browser window showing a search engine.",
+    'The topic is "technology". A laptop, tablet and smartphone on a desk with wifi symbol and browser window.',
     group="topics")
 
 img("topic-modals",    "topics/unit6-modals.webp",
-    "Three road signs side by side: a green one with a thumbs up (should), a blue one with an exclamation mark (must), and a red one with an X (mustn't). Rules and advice concept.",
+    'The topic is "rules, obligation and advice". Three road signs: a green thumbs up, a blue exclamation mark, and a red X.',
     group="topics")
 
 # --- Listening illustrations ---
 img("listen-directions","topics/listen-directions.webp",
-    "A cartoon person standing at a street crossroads looking at directional signs, a friendly map pin character pointing the way.",
+    'The topic is "listening to directions". A person standing at a street crossroads looking at directional signs.',
     group="topics")
 
 img("listen-appearance","topics/listen-appearance.webp",
-    "Two cartoon children describing each other: speech bubbles with simple icons of hair colour, eye colour, height. Describing people concept.",
+    'The topic is "describing people". Two children looking at each other, one pointing at features like hair and eyes.',
     group="topics")
 
 
