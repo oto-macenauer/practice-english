@@ -13,6 +13,11 @@ Desktop.ini
 # Node (dev tooling only)
 node_modules/
 package-lock.json
+package.json
+
+# Test output
+test-results/
+playwright-report/
 
 # Logs
 *.log
