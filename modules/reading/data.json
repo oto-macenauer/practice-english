@@ -146,6 +146,59 @@
           ]
         }
       ]
+    },
+    {
+      "id": "unit7",
+      "title": "Unit 7",
+      "color": "blue",
+      "sections": [
+        {
+          "id": "altamira-caves",
+          "title": "The Altamira Caves",
+          "icon": "🎨",
+          "color": "amber",
+          "type": "reading",
+          "instructions": "Read the text about the Altamira Caves, then answer the questions.",
+          "passage": "Paula's dad is an archaeologist. Last year, he visited Spain because there is lots of work for an archaeologist in Spain. It's got many examples of how people lived in the past. His exciting new job was to study the Altamira Caves.\n\nThe caves are famous because archaeologists discovered the first cave paintings there in 1880. We did not know that in the past, people told stories using art. They didn't write like we do today.\n\nThe paintings are over 16,000 years old. Many of the paintings on the cave walls show animals and people hunting. In one cave, a really big painting showed a herd of bison. We think the paintings tell the story of how people hunted.\n\nThere were no paints or paintbrushes then, so the cave people used the things they found around them. They used sticks, bones and even their hands. They made paint out of natural materials like rocks, earth and animal fat.\n\nPaula says: 'When I grow up, I want to be an archaeologist like my father. He tells me all about his work, and I think it is amazing!'",
+          "questions": [
+            { "question": "What job does Paula's dad do?", "options": ["He is a teacher", "He is an archaeologist", "He is an artist", "He is a photographer"], "answer": "He is an archaeologist" },
+            { "question": "Where did Paula's dad go to work?", "options": ["France", "Italy", "Spain", "Greece"], "answer": "Spain" },
+            { "question": "What did the early cave people paint on the walls?", "options": ["Houses and rivers", "Animals and people hunting", "Trees and flowers", "Mountains and lakes"], "answer": "Animals and people hunting" },
+            { "question": "When were the cave paintings discovered?", "options": ["In 1680", "In 1780", "In 1880", "In 1980"], "answer": "In 1880" },
+            { "question": "How old are the paintings?", "options": ["Over 1,600 years", "Over 6,000 years", "Over 16,000 years", "Over 160,000 years"], "answer": "Over 16,000 years" },
+            { "question": "What did one big painting show?", "options": ["A group of horses", "A herd of bison", "A pack of wolves", "A flock of birds"], "answer": "A herd of bison" },
+            { "question": "What did the cave people use instead of paintbrushes?", "options": ["Feathers", "Sticks, bones and hands", "Leaves", "Cloth"], "answer": "Sticks, bones and hands" },
+            { "question": "How did cave people make paint?", "options": ["They bought it", "From natural materials like rocks and earth", "They used flowers", "They used water only"], "answer": "From natural materials like rocks and earth" },
+            { "question": "What does Paula want to be when she grows up?", "options": ["A painter", "An archaeologist", "A teacher", "A cave explorer"], "answer": "An archaeologist" },
+            { "question": "Why is there lots of work for archaeologists in Spain?", "options": ["It has many modern buildings", "It has many examples of how people lived in the past", "It has many rivers", "It has many schools"], "answer": "It has many examples of how people lived in the past" },
+            { "question": "How did people in the past tell stories?", "options": ["By writing books", "By using art", "By singing songs", "By sending letters"], "answer": "By using art" },
+            { "question": "What does Paula think about her dad's work?", "options": ["It is boring", "It is difficult", "It is amazing", "It is easy"], "answer": "It is amazing" }
+          ]
+        },
+        {
+          "id": "don-quixote",
+          "title": "Don Quixote",
+          "icon": "⚔️",
+          "color": "emerald",
+          "type": "reading",
+          "instructions": "Read the play script about Don Quixote, then answer the questions.",
+          "passage": "A long time ago in Spain, in a land called La Mancha, there was a quiet village with a large house. The man who lived in the house was called Alonso Quixano. Alonso read books all day about brave knights. He read so much that sometimes he forgot to eat or sleep. He dreamed about saving women in danger and fighting dragons.\n\nOne day he decided to become a knight and he changed his name to Don Quixote. He put on his grandfather's armour and he rode his horse Rocinante. He asked his good friend Sancho Panza to join him and he promised to pay him lots of money in return.\n\nDon Quixote said: 'Look, Sancho! Our next great adventure. Can you see them?'\nSancho said: 'What?'\nDon Quixote said: 'Thirty or forty giants over there.'\nSancho said: 'What giants?'\nDon Quixote said: 'Over there! Look how long their arms are. They're moving in all directions.'\nSancho said: 'Dear friend, you think they look like giants but they're windmills and the arms you can see are their sails blowing in the wind.'\n\nBut Don Quixote rode towards the windmills. The windmill caught Don Quixote and Rocinante and threw them down.\n\nSancho said: 'Are you alright? I told you that...'\nDon Quixote said: 'Be quiet, Sancho! Someone changed the giants into windmills. It's magic!'\nSancho said: 'Yes, my friend. Let me help you.'\n\nAnd they continued on their journey to find their next adventure.",
+          "questions": [
+            { "question": "Where does the story take place?", "options": ["In Portugal", "In La Mancha, Spain", "In France", "In Italy"], "answer": "In La Mancha, Spain" },
+            { "question": "What was the man's real name?", "options": ["Don Quixote", "Sancho Panza", "Alonso Quixano", "Rocinante"], "answer": "Alonso Quixano" },
+            { "question": "What did Alonso read about all day?", "options": ["Cooking recipes", "Brave knights", "Science experiments", "Geography"], "answer": "Brave knights" },
+            { "question": "What is the name of Don Quixote's horse?", "options": ["Sancho", "Panza", "Rocinante", "Alonso"], "answer": "Rocinante" },
+            { "question": "Who is Sancho Panza?", "options": ["Don Quixote's brother", "Don Quixote's friend", "Don Quixote's teacher", "Don Quixote's son"], "answer": "Don Quixote's friend" },
+            { "question": "What did Don Quixote think the windmills were?", "options": ["Houses", "Giants", "Dragons", "Castles"], "answer": "Giants" },
+            { "question": "What were the 'arms' that Don Quixote saw?", "options": ["Tree branches", "The sails of the windmills", "Real giant arms", "Flags"], "answer": "The sails of the windmills" },
+            { "question": "What happened when Don Quixote rode towards the windmills?", "options": ["He won the fight", "The windmill threw him down", "The giants ran away", "Sancho saved him"], "answer": "The windmill threw him down" },
+            { "question": "What did Don Quixote say happened to the giants?", "options": ["They ran away", "Someone changed them into windmills by magic", "They were sleeping", "They disappeared"], "answer": "Someone changed them into windmills by magic" },
+            { "question": "Whose armour did Don Quixote wear?", "options": ["His father's", "His grandfather's", "His own", "Sancho's"], "answer": "His grandfather's" },
+            { "question": "What did Don Quixote promise Sancho?", "options": ["A horse", "Lots of money", "A castle", "A new sword"], "answer": "Lots of money" },
+            { "question": "What did Alonso sometimes forget to do because he read so much?", "options": ["Go to school", "Eat or sleep", "Feed his horse", "Talk to people"], "answer": "Eat or sleep" }
+          ]
+        }
+      ]
     }
   ]
 }

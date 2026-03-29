@@ -103,6 +103,103 @@
           ]
         }
       ]
+    },
+    {
+      "id": "unit7",
+      "title": "Unit 7",
+      "color": "blue",
+      "sections": [
+        {
+          "id": "jobs",
+          "title": "Jobs",
+          "icon": "💼",
+          "color": "teal",
+          "type": "match",
+          "instructions": "Match each description to the correct job.",
+          "pairs": [
+            { "prompt": "This person serves food and drinks in a restaurant.", "answer": "waiter" },
+            { "prompt": "This person performs in films, TV shows or on stage.", "answer": "actor" },
+            { "prompt": "This person prepares food in a kitchen.", "answer": "cook" },
+            { "prompt": "This person drives a car, bus or taxi.", "answer": "driver" },
+            { "prompt": "This person writes articles for newspapers or websites.", "answer": "journalist" },
+            { "prompt": "This person takes photos with a camera.", "answer": "photographer" },
+            { "prompt": "This person creates paintings, drawings or sculptures.", "answer": "artist" },
+            { "prompt": "This person creates the look and style of clothes or objects.", "answer": "designer" },
+            { "prompt": "This person sings songs, sometimes in a band or on stage.", "answer": "singer" },
+            { "prompt": "This person performs gymnastics and tricks, often in a circus.", "answer": "acrobat" },
+            { "prompt": "This person works on a farm and grows food or keeps animals.", "answer": "farmer" },
+            { "prompt": "This person brings your food when you eat out.", "answer": "waiter" },
+            { "prompt": "This person uses a camera at work and takes pictures of people or places.", "answer": "photographer" },
+            { "prompt": "You have to remember a lot of words for this job and you work on a stage.", "answer": "actor" },
+            { "prompt": "This is a good job if you like food and want to work in a kitchen.", "answer": "cook" }
+          ]
+        },
+        {
+          "id": "personality-adjectives",
+          "title": "Personality Adjectives",
+          "icon": "🌟",
+          "color": "orange",
+          "type": "match",
+          "instructions": "Match each description to the correct personality adjective.",
+          "pairs": [
+            { "prompt": "Someone who is warm and always wants to help other people.", "answer": "kind" },
+            { "prompt": "Someone who talks to everyone and makes friends easily.", "answer": "friendly" },
+            { "prompt": "Someone who learns things quickly and knows a lot.", "answer": "clever" },
+            { "prompt": "Someone who tells you exciting stories and you never feel bored.", "answer": "interesting" },
+            { "prompt": "Someone who doesn't want to work and prefers to do nothing.", "answer": "lazy" },
+            { "prompt": "Someone who is sweet, cute and very nice.", "answer": "lovely" },
+            { "prompt": "Someone who is not nice and often hurts other people's feelings.", "answer": "unkind" },
+            { "prompt": "Someone who doesn't talk to people and is not welcoming.", "answer": "unfriendly" },
+            { "prompt": "Someone who everybody knows and likes.", "answer": "popular" },
+            { "prompt": "Someone who is not afraid of danger or difficult things.", "answer": "brave" },
+            { "prompt": "The opposite of 'kind'.", "answer": "unkind" },
+            { "prompt": "The opposite of 'friendly'.", "answer": "unfriendly" },
+            { "prompt": "The opposite of 'boring'.", "answer": "interesting" },
+            { "prompt": "The opposite of 'cowardly'.", "answer": "brave" },
+            { "prompt": "The opposite of 'hard-working'.", "answer": "lazy" }
+          ]
+        },
+        {
+          "id": "vocab-context",
+          "title": "Vocabulary in Context",
+          "icon": "✏️",
+          "color": "amber",
+          "type": "fill-choice",
+          "instructions": "Choose the correct word to complete each sentence.",
+          "questions": [
+            { "sentence": "The ___ took our order and brought us our drinks.", "options": ["waiter", "driver", "artist", "singer"], "answer": "waiter" },
+            { "sentence": "My uncle is a ___ — he takes beautiful photos of nature.", "options": ["photographer", "designer", "journalist", "cook"], "answer": "photographer" },
+            { "sentence": "She wants to be an ___ when she grows up because she loves performing.", "options": ["actor", "farmer", "driver", "cook"], "answer": "actor" },
+            { "sentence": "The ___ wrote an article about the school play for the newspaper.", "options": ["journalist", "singer", "waiter", "artist"], "answer": "journalist" },
+            { "sentence": "He's very ___ — he always gets the best marks in class.", "options": ["clever", "lazy", "unkind", "unfriendly"], "answer": "clever" },
+            { "sentence": "She's very ___ — she never does her homework.", "options": ["lazy", "brave", "kind", "clever"], "answer": "lazy" },
+            { "sentence": "Don Quixote was very ___. He wasn't afraid of anything.", "options": ["brave", "lazy", "unkind", "unfriendly"], "answer": "brave" },
+            { "sentence": "My teacher is very ___ — everyone likes her.", "options": ["popular", "unkind", "lazy", "unfriendly"], "answer": "popular" },
+            { "sentence": "He's very ___ — he doesn't talk to anyone.", "options": ["unfriendly", "friendly", "brave", "popular"], "answer": "unfriendly" },
+            { "sentence": "My little sister is very ___. She always helps people.", "options": ["kind", "unkind", "lazy", "unfriendly"], "answer": "kind" },
+            { "sentence": "The ___ made a delicious meal for the whole family.", "options": ["cook", "waiter", "driver", "journalist"], "answer": "cook" },
+            { "sentence": "The ___ designed a beautiful new dress for the fashion show.", "options": ["designer", "photographer", "artist", "singer"], "answer": "designer" },
+            { "sentence": "The ___ performed amazing tricks on the trapeze at the circus.", "options": ["acrobat", "singer", "journalist", "driver"], "answer": "acrobat" },
+            { "sentence": "My grandpa is a ___. He grows strawberries and keeps chickens.", "options": ["farmer", "cook", "artist", "waiter"], "answer": "farmer" },
+            { "sentence": "She's very ___ — she tells us fun facts about everything.", "options": ["interesting", "lazy", "unkind", "unfriendly"], "answer": "interesting" },
+            { "sentence": "The ___ sang a beautiful song at the concert.", "options": ["singer", "driver", "cook", "farmer"], "answer": "singer" },
+            { "sentence": "The ___ painted a beautiful picture of the sunset.", "options": ["artist", "journalist", "waiter", "photographer"], "answer": "artist" },
+            { "sentence": "The baby is so ___! Look at those cute little hands.", "options": ["lovely", "unkind", "clever", "lazy"], "answer": "lovely" },
+            { "sentence": "The ___ drove the bus carefully through the busy streets.", "options": ["driver", "cook", "singer", "artist"], "answer": "driver" },
+            { "sentence": "He's very ___ — he says mean things to other children.", "options": ["unkind", "kind", "lovely", "popular"], "answer": "unkind" },
+            { "sentence": "What does your dad ___? He's tall with brown hair.", "options": ["look like", "like", "is like", "be like"], "answer": "look like" },
+            { "sentence": "What ___ your sister like? She's very friendly and kind.", "options": ["is", "does", "do", "has"], "answer": "is" },
+            { "sentence": "What does your brother ___? He likes playing football.", "options": ["like", "look like", "is like", "be like"], "answer": "like" },
+            { "sentence": "If you ___ ice, it melts. (zero conditional)", "options": ["heat", "heats", "heated", "heating"], "answer": "heat" },
+            { "sentence": "When the sun goes down, it ___ dark. (zero conditional)", "options": ["gets", "get", "got", "getting"], "answer": "gets" },
+            { "sentence": "If you don't water a plant, it ___. (zero conditional)", "options": ["dies", "die", "died", "dying"], "answer": "dies" },
+            { "sentence": "The ___ works in a restaurant and takes people's orders.", "options": ["waiter", "journalist", "farmer", "photographer"], "answer": "waiter" },
+            { "sentence": "An ___ studies old objects to learn about the past.", "options": ["archaeologist", "artist", "actor", "acrobat"], "answer": "archaeologist" },
+            { "sentence": "She's got short dark hair and green eyes. That's what she ___.", "options": ["looks like", "is like", "likes", "look like"], "answer": "looks like" },
+            { "sentence": "When water reaches 100°C, it ___. (zero conditional)", "options": ["boils", "boil", "boiled", "boiling"], "answer": "boils" }
+          ]
+        }
+      ]
     }
   ]
 }
