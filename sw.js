@@ -1,16 +1,18 @@
 const CACHE_NAME = "practice-english-v1";
 
+const BASE = "/practice-english";
+
 const PRECACHE_URLS = [
-  "/index.html",
-  "/css/style.css",
-  "/js/app.js",
-  "/manifest.json",
-  "/images/modules/vocabulary.webp",
-  "/images/modules/grammar.webp",
-  "/images/modules/spelling.webp",
-  "/images/modules/reading.webp",
-  "/images/modules/listening.webp",
-  "/images/modules/tests.webp",
+  BASE + "/index.html",
+  BASE + "/css/style.css",
+  BASE + "/js/app.js",
+  BASE + "/manifest.json",
+  BASE + "/images/modules/vocabulary.webp",
+  BASE + "/images/modules/grammar.webp",
+  BASE + "/images/modules/spelling.webp",
+  BASE + "/images/modules/reading.webp",
+  BASE + "/images/modules/listening.webp",
+  BASE + "/images/modules/tests.webp",
 ];
 
 // Install — precache shell
