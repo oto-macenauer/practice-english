@@ -204,6 +204,9 @@
 
         checkBtn.disabled = true;
         checkBtn.textContent = `${sectionScore} / ${items.length} correct`;
+
+        const unitId = selected.find((s) => s.sectionId === section.id)?.unitId || "unknown";
+        App.saveScore("reading", unitId, section.id, sectionScore, items.length);
       });
 
       area.appendChild(block);

@@ -159,6 +159,18 @@ footer {
   display: block;
 }
 
+/* Card progress badge (homepage) */
+.card-progress {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--color-primary);
+  padding: 0.25rem 1.25rem 1rem;
+  font-weight: 500;
+}
+.card-progress:empty {
+  display: none;
+}
+
 /* ===== Module Page ===== */
 .module-header {
   margin-bottom: 2rem;

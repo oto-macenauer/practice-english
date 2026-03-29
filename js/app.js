@@ -56,5 +56,43 @@ const App = (() => {
     return res.json();
   }
 
-  return { pickRandom, shuffle, showFeedback, hideFeedback, loadJSON };
+  // ========== Score Persistence ==========
+
+  /**
+   * Save a score to localStorage, keeping the best result (highest %).
+   * For practice tests, pass an optional `grade` (1–5).
+   */
+  function saveScore(module, unit, section, score, total, grade) {
+    const key = "scores";
+    const scores = JSON.parse(localStorage.getItem(key) || "{}");
+    const id = module + "/" + unit + "/" + section;
+    const existing = scores[id];
+    if (!existing || score / total > existing.score / existing.total) {
+      scores[id] = { score: score, total: total, date: new Date().toISOString() };
+      if (grade !== undefined) scores[id].grade = grade;
+    }
+    localStorage.setItem(key, JSON.stringify(scores));
+  }
+
+  /**
+   * Return scores for a module prefix, or all scores if no argument.
+   */
+  function getScores(module) {
+    const scores = JSON.parse(localStorage.getItem("scores") || "{}");
+    if (!module) return scores;
+    const filtered = {};
+    for (const [k, v] of Object.entries(scores)) {
+      if (k.startsWith(module + "/")) filtered[k] = v;
+    }
+    return filtered;
+  }
+
+  /**
+   * Clear all saved scores.
+   */
+  function clearScores() {
+    localStorage.removeItem("scores");
+  }
+
+  return { pickRandom, shuffle, showFeedback, hideFeedback, loadJSON, saveScore, getScores, clearScores };
 })();

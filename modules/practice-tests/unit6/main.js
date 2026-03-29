@@ -155,6 +155,8 @@
       checkBtn.disabled = true;
       checkBtn.textContent = `${sectionScore} / ${items.length} correct`;
 
+      App.saveScore("practice-tests", "unit6", section.id, sectionScore, items.length);
+
       // Check if all sections are done
       sectionsChecked++;
       if (sectionsChecked === activeSections.length) {
@@ -197,6 +199,8 @@
 
     area.appendChild(gradeDiv);
     gradeDiv.scrollIntoView({ behavior: "smooth", block: "center" });
+
+    App.saveScore("practice-tests", "unit6", "_total", correct, total, grade);
   }
 
   // ========== Builders ==========

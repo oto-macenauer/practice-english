@@ -216,6 +216,10 @@
 
         checkBtn.disabled = true;
         checkBtn.textContent = `${sectionScore} / ${items.length} correct`;
+
+        // Find the unit id for this section
+        const unitId = selected.find((s) => s.sectionId === section.id)?.unitId || "unknown";
+        App.saveScore("vocabulary", unitId, section.id, sectionScore, items.length);
       });
 
       area.appendChild(block);

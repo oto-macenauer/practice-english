@@ -140,6 +140,8 @@
       checkBtn.disabled = true;
       checkBtn.textContent = `${sectionScore} / ${items.length} correct`;
 
+      App.saveScore("practice-tests", "unit5", section.id, sectionScore, items.length);
+
       sectionsChecked++;
       if (sectionsChecked === activeSections.length) {
         showGrade(totalCorrect, totalQuestions);
@@ -179,6 +181,8 @@
 
     area.appendChild(gradeDiv);
     gradeDiv.scrollIntoView({ behavior: "smooth", block: "center" });
+
+    App.saveScore("practice-tests", "unit5", "_total", correct, total, grade);
   }
 
   function buildChoiceQuestion(index, q, items) {

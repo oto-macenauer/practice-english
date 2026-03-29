@@ -35,46 +35,57 @@
     </section>
 
     <div class="card-grid mt-3">
-      <a href="modules/vocabulary/index.html" class="card card--purple card--img">
+      <a href="modules/vocabulary/index.html" class="card card--purple card--img" data-module="vocabulary">
         <img class="card-img" src="images/modules/vocabulary.webp" alt="">
         <h2>Vocabulary</h2>
         <p>Pick topics by unit and practise words, definitions &amp; context.</p>
+        <span class="card-progress"></span>
       </a>
 
-      <a href="modules/grammar/index.html" class="card card--blue card--img">
+      <a href="modules/grammar/index.html" class="card card--blue card--img" data-module="grammar">
         <img class="card-img" src="images/modules/grammar.webp" alt="">
         <h2>Grammar</h2>
         <p>Practice sentence structure, tenses, and common grammar rules.</p>
+        <span class="card-progress"></span>
       </a>
 
-      <a href="modules/spelling/index.html" class="card card--amber card--img">
+      <a href="modules/spelling/index.html" class="card card--amber card--img" data-module="spelling">
         <img class="card-img" src="images/modules/spelling.webp" alt="">
         <h2>Spelling</h2>
         <p>Test your spelling with dictation-style exercises.</p>
+        <span class="card-progress"></span>
       </a>
 
-      <a href="modules/reading/index.html" class="card card--emerald card--img">
+      <a href="modules/reading/index.html" class="card card--emerald card--img" data-module="reading">
         <img class="card-img" src="images/modules/reading.webp" alt="">
         <h2>Reading</h2>
         <p>Read short passages and answer comprehension questions.</p>
+        <span class="card-progress"></span>
       </a>
 
-      <a href="modules/listening/index.html" class="card card--blue card--img">
+      <a href="modules/listening/index.html" class="card card--blue card--img" data-module="listening">
         <img class="card-img" src="images/modules/listening.webp" alt="">
         <h2>Listening</h2>
         <p>Listen to sentences and practise your listening skills.</p>
+        <span class="card-progress"></span>
       </a>
 
-      <a href="modules/practice-tests/index.html" class="card card--rose card--img">
+      <a href="modules/practice-tests/index.html" class="card card--rose card--img" data-module="practice-tests">
         <img class="card-img" src="images/modules/tests.webp" alt="">
         <h2>Practice Tests</h2>
         <p>Full unit tests combining vocabulary, grammar, reading and more.</p>
+        <span class="card-progress"></span>
       </a>
     </div>
   </main>
 
   <footer>
-    <div class="container">&copy; 2026 Practice English</div>
+    <div class="container">
+      &copy; 2026 Practice English
+      <span id="clear-progress-wrap" style="display:none">
+        &middot; <a href="#" id="clear-progress">Clear progress</a>
+      </span>
+    </div>
   </footer>
 
   <script src="js/app.js"></script>
@@ -82,6 +93,61 @@
     if ("serviceWorker" in navigator) {
       navigator.serviceWorker.register("/practice-english/sw.js");
     }
+
+    // Show progress badges on module cards
+    (function () {
+      var allScores = App.getScores();
+      var hasAny = Object.keys(allScores).length > 0;
+
+      document.querySelectorAll("[data-module]").forEach(function (card) {
+        var mod = card.getAttribute("data-module");
+        var modScores = App.getScores(mod);
+        var keys = Object.keys(modScores);
+        if (!keys.length) return;
+
+        var badge = card.querySelector(".card-progress");
+        if (!badge) return;
+
+        if (mod === "practice-tests") {
+          // Show grades for completed tests
+          var grades = [];
+          keys.forEach(function (k) {
+            if (k.endsWith("/_total") && modScores[k].grade) {
+              var unit = k.split("/")[1];
+              grades.push(unit.replace("unit", "U") + ": Grade " + modScores[k].grade);
+            }
+          });
+          if (grades.length) {
+            badge.textContent = grades.join(", ");
+          } else {
+            var topicCount = keys.length;
+            badge.textContent = topicCount + " section" + (topicCount === 1 ? "" : "s") + " completed";
+          }
+        } else {
+          // Aggregate: sum scores / sum totals
+          var totalScore = 0, totalPossible = 0, topicsDone = 0;
+          keys.forEach(function (k) {
+            totalScore += modScores[k].score;
+            totalPossible += modScores[k].total;
+            topicsDone++;
+          });
+          var pct = Math.round((totalScore / totalPossible) * 100);
+          badge.textContent = topicsDone + " topic" + (topicsDone === 1 ? "" : "s") + " \u00b7 " + pct + "%";
+        }
+      });
+
+      // Show "Clear progress" link only if there are scores
+      if (hasAny) {
+        document.getElementById("clear-progress-wrap").style.display = "inline";
+        document.getElementById("clear-progress").addEventListener("click", function (e) {
+          e.preventDefault();
+          if (confirm("Clear all saved progress?")) {
+            App.clearScores();
+            location.reload();
+          }
+        });
+      }
+    })();
   </script>
 </body>
 </html>
