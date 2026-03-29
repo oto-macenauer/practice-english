@@ -14,7 +14,7 @@
   const READING_PICK = 2;
 
   const data = await App.loadJSON("data.json");
-  const PICK = data.questionsPerSection || 5;
+  const PICK = App.getQuestionCount();
   const area = document.getElementById("test-area");
   const scoreEl = document.getElementById("score");
   const totalEl = document.getElementById("total");
@@ -177,6 +177,7 @@
       `<div class="grade-info">` +
         `<div class="grade-label" style="color:${color}">${label}</div>` +
         `<div class="grade-pct">${pct}% — ${correct} out of ${total} correct</div>` +
+        `<div class="grade-difficulty">Difficulty: ${App.getDifficulty().charAt(0).toUpperCase() + App.getDifficulty().slice(1)}</div>` +
       `</div>`;
 
     area.appendChild(gradeDiv);
@@ -218,7 +219,7 @@
         });
         result.textContent = correct ? "✓ Correct!" : `✗ Answer: ${q.answer}`;
         result.className = "result " + (correct ? "ok" : "fail");
-        if (explEl) explEl.style.display = "block";
+        if (explEl && App.getDifficulty() !== "hard") explEl.style.display = "block";
         return correct;
       },
     });

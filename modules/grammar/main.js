@@ -1,6 +1,5 @@
 (async () => {
   const data = await App.loadJSON("data.json");
-  const PICK = data.questionsPerSection || 8;
   const area = document.getElementById("test-area");
   const scoreBar = document.getElementById("score-bar");
   const scoreEl = document.getElementById("score");
@@ -93,6 +92,9 @@
       picker.appendChild(card);
     });
 
+    // Difficulty selector
+    picker.appendChild(App.buildDifficultySelector());
+
     // Start button
     const startBtn = document.createElement("button");
     startBtn.className = "btn btn-primary btn-start";
@@ -119,6 +121,7 @@
 
   function startQuiz(selected) {
     scoreBar.style.display = "";
+    const PICK = App.getQuestionCount();
 
     let totalCorrect = 0;
     let totalQuestions = 0;
@@ -231,6 +234,7 @@
     items.push({
       check() {
         const correct = selected === q.answer;
+        const diff = App.getDifficulty();
         optBox.querySelectorAll("button").forEach((b) => {
           b.classList.remove("selected");
           b.disabled = true;
@@ -239,7 +243,7 @@
         });
         if (correct) {
           result.textContent = "✓ Correct!";
-        } else if (q.explanation) {
+        } else if (q.explanation && diff !== "hard") {
           result.textContent = `✗ ${q.answer} — ${q.explanation}`;
         } else {
           result.textContent = `✗ Answer: ${q.answer}`;

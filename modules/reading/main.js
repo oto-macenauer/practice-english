@@ -1,6 +1,5 @@
 (async () => {
   const data = await App.loadJSON("data.json");
-  const PICK = data.questionsPerSection || 5;
   const area = document.getElementById("test-area");
   const scoreBar = document.getElementById("score-bar");
   const scoreEl = document.getElementById("score");
@@ -93,6 +92,9 @@
       picker.appendChild(card);
     });
 
+    // Difficulty selector
+    picker.appendChild(App.buildDifficultySelector());
+
     // Start button
     const startBtn = document.createElement("button");
     startBtn.className = "btn btn-primary btn-start";
@@ -119,6 +121,7 @@
 
   function startQuiz(selected) {
     scoreBar.style.display = "";
+    const PICK = App.getQuestionCount();
 
     let totalCorrect = 0;
     let totalQuestions = 0;

@@ -272,3 +272,9 @@ textarea:focus {
 .mt-3 { margin-top: 1.5rem; }
 .mb-1 { margin-bottom: 0.5rem; }
 .mb-2 { margin-bottom: 1rem; }
+
+/* ===== Difficulty Selector ===== */
+.difficulty-selector { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem; }
+.diff-btn { padding: 0.4rem 1rem; border: 1px solid var(--color-border); border-radius: var(--radius); background: var(--color-surface); cursor: pointer; font-size: 0.85rem; }
+.diff-btn.active { border-color: var(--color-primary); background: #dbeafe; color: var(--color-primary); font-weight: 600; }
+.diff-btn:hover:not(.active) { background: #eff6ff; }

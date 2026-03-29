@@ -94,5 +94,49 @@ const App = (() => {
     localStorage.removeItem("scores");
   }
 
-  return { pickRandom, shuffle, showFeedback, hideFeedback, loadJSON, saveScore, getScores, clearScores };
+  // ========== Difficulty ==========
+
+  function getDifficulty() {
+    return localStorage.getItem("difficulty") || "medium";
+  }
+
+  function setDifficulty(level) {
+    localStorage.setItem("difficulty", level);
+  }
+
+  function getQuestionCount(level) {
+    return { easy: 3, medium: 5, hard: 10 }[level || getDifficulty()] || 5;
+  }
+
+  /**
+   * Build and return a difficulty-selector element.
+   * Call this inside renderPicker() and append it before the Start button.
+   */
+  function buildDifficultySelector() {
+    const wrap = document.createElement("div");
+    wrap.className = "difficulty-selector";
+
+    const label = document.createElement("span");
+    label.textContent = "Difficulty:";
+    wrap.appendChild(label);
+
+    const current = getDifficulty();
+    ["easy", "medium", "hard"].forEach((lvl) => {
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "diff-btn" + (lvl === current ? " active" : "");
+      btn.dataset.level = lvl;
+      btn.textContent = lvl.charAt(0).toUpperCase() + lvl.slice(1);
+      btn.addEventListener("click", () => {
+        wrap.querySelectorAll(".diff-btn").forEach((b) => b.classList.remove("active"));
+        btn.classList.add("active");
+        setDifficulty(lvl);
+      });
+      wrap.appendChild(btn);
+    });
+
+    return wrap;
+  }
+
+  return { pickRandom, shuffle, showFeedback, hideFeedback, loadJSON, saveScore, getScores, clearScores, getDifficulty, setDifficulty, getQuestionCount, buildDifficultySelector };
 })();
