@@ -54,7 +54,7 @@ from PIL import Image
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
 TOGETHER_API_KEY = os.environ.get("TOGETHER_API_KEY", "")
 OUTPUT_DIR = PROJECT_ROOT / "images"
-SIZE = (512, 512)
+SIZE = (768, 400)  # wide banner format matching card display (≈300x160)
 
 # Model options (pick via --model flag):
 #   gemini   = gemini-2.5-flash-image  (needs GEMINI_API_KEY, geo-restricted)
@@ -73,11 +73,12 @@ MODEL_MAP = {
 # [Core Style] + [Subject & Action] + [Characters & Setting] + [Refinement]
 
 CORE_STYLE = (
-    "An energetic educational app illustration, "
+    "An energetic educational app illustration in wide landscape format, "
     "comic book art style inspired by modern DC Comics, "
     "cinematic and dynamic composition, high-contrast, "
     "detailed ink line work. "
     "Muted color palette with shades of slate gray, charcoal, and deep browns. "
+    "Important content centered horizontally in the frame. "
 )
 
 REFINEMENT = (
@@ -107,102 +108,104 @@ def img(id: str, path: str, subject: str, scene: str, group: str = "misc"):
 
 
 # --- Module cards (homepage) ---
+# Each has a UNIQUE composition — no repeated "person standing with hands up" pattern.
+
 img("mod-vocabulary",  "modules/vocabulary.webp",
-    "A charismatic teacher figure conjures swirling, glowing blue 3D word bubbles and flashcards from an open book.",
-    "Diverse students in a bright modern classroom reach up to catch the floating words, amazed.",
+    "Close-up of a desk covered with scattered flashcards, each card showing a vivid picture — an apple, a dog, a house. Glowing blue connections link related cards together like a web.",
+    "Seen from above at an angle, hands of two students reaching for cards. Warm desk lamp lighting.",
     group="modules")
 
 img("mod-grammar",     "modules/grammar.webp",
-    "A charismatic figure conjures swirling, glowing blue 3D punctuation marks and sentence fragments from their hands.",
-    "An enthusiastic teacher and diverse students inside a modern school library, looking up in wonder.",
+    "A giant open notebook fills the frame, with colourful sentence diagrams drawn across the pages. Glowing blue lines connect subject, verb, and object blocks like a circuit board.",
+    "A pencil rests on the page mid-sentence, ink still wet. Bird's-eye view, dramatic shadows from a desk lamp.",
     group="modules")
 
 img("mod-spelling",    "modules/spelling.webp",
-    "A confident student figure assembles glowing blue 3D letter blocks into words mid-air, like building blocks.",
-    "Other students watch and cheer inside a colorful modern classroom.",
+    "Wooden letter tiles tumble through the air in slow motion, mid-fall, forming a word. Some tiles glow blue as they snap into the correct position.",
+    "Dark background with spotlight on the falling tiles, dynamic diagonal composition.",
     group="modules")
 
 img("mod-reading",     "modules/reading.webp",
-    "A young hero figure holds open a massive glowing book, and vivid 3D illustrations — castles, dragons, ships — pour out of the pages.",
-    "Students sit cross-legged on the floor of a grand library, captivated by the scenes emerging from the book.",
+    "A massive open book lies flat, and from its pages rise miniature 3D scenes — a tiny castle, a sailing ship, a dragon curled around a tower — like a pop-up book come to life.",
+    "Viewed from a low angle looking across the pages. Warm golden light spills from the book onto the surrounding dark room.",
     group="modules")
 
 img("mod-listening",   "modules/listening.webp",
-    "A figure wearing an elegant robe stands inside a grand amphitheater, smiling as complex, glowing blue sound waves, musical notes, and symbols gently swirl towards the group.",
-    "Students in the foreground wear large headphones and look up in awe, actively listening and absorbing the symbols.",
+    "A pair of large vintage headphones rests on a wooden table. From the ear cups, visible sound waves ripple outward — glowing blue rings expanding into the air, carrying tiny musical notes.",
+    "Side view, shallow depth of field, the headphones sharp in focus against a blurred classroom background.",
     group="modules")
 
 img("mod-tests",       "modules/tests.webp",
-    "A figure wearing a graduation cap stands confidently over a giant, 3D glowing blue puzzle block, using a wrench to fit the final glowing piece into place.",
-    "A team of diverse students works together, offering tools and celebrating.",
+    "A desk viewed from above: a test paper with rows of checkboxes (some ticked in blue), a sharpened pencil, an eraser, and a small trophy with a star on top. Everything arranged neatly.",
+    "Overhead flat-lay composition, clean and organized, strong shadows from directional light.",
     group="modules")
 
 # --- Unit 7 topic illustrations ---
 img("topic-jobs",      "topics/unit7-jobs.webp",
-    "A panoramic scene of diverse workers in action: a chef cooking with flames, a photographer snapping photos, a singer performing on stage, a farmer harvesting crops.",
-    "Each worker glows with blue energy outlines, standing in their respective environments merged into one dynamic cityscape.",
+    "A wide street scene split into panels like a comic strip: a chef flipping a pan in a kitchen, a photographer crouching to take a shot, a waiter balancing a tray, a farmer driving a tractor.",
+    "Each panel has its own color accent. The panels are arranged horizontally across the wide frame.",
     group="topics")
 
 img("topic-adjectives","topics/unit7-adjectives.webp",
-    "Six expressive character portraits arranged in a comic panel grid, each showing a distinct personality: kind and warm, clever and focused, lazy and yawning, brave and determined, friendly and waving, popular and surrounded by admirers.",
-    "Each portrait has a different background tone reflecting the mood of the trait.",
+    "Six comic-book portrait panels in a 3x2 grid, each showing a close-up face with an exaggerated expression: beaming smile (kind), raised eyebrow with glasses (clever), huge yawn (lazy), clenched fist and determined jaw (brave), wide grin and waving hand (friendly), crowd of tiny admirers around (popular).",
+    "Each panel has a distinct background colour. Tight framing on faces.",
     group="topics")
 
 img("topic-zero-cond", "topics/unit7-zero-conditional.webp",
-    "A dramatic split-panel illustration: on one side, the blazing sun shines down on a block of ice; on the other side, a puddle of water with steam rising. A glowing blue arrow connects the two scenes.",
-    "A young scientist figure stands between the panels, gesturing to demonstrate the cause and effect.",
+    "A split-panel scene divided by a bold glowing blue lightning-bolt line: LEFT side shows blazing sun melting an ice cube, RIGHT side shows a puddle of water with steam rising.",
+    "Wide landscape format, dramatic contrast between the hot left and cool right side. No people, pure cause-and-effect imagery.",
     group="topics")
 
 img("topic-look-like", "topics/unit7-look-like.webp",
-    "A family portrait scene with distinct character designs: a tall father with brown hair, a shorter mother with blonde hair, a child with wild curly red hair, and a grandmother with glasses and silver hair.",
-    "They stand together on a porch, each with exaggerated comic-book features to emphasize their unique appearance.",
+    "A family of four walking towards the viewer on a tree-lined street: tall dad with brown hair, shorter mum with blonde bob, energetic child with wild curly red hair mid-jump, grandma with round glasses and silver bun using a walking stick.",
+    "Wide shot, golden afternoon light, long shadows stretching towards the camera.",
     group="topics")
 
 img("topic-passive",   "topics/unit5-passive.webp",
-    "A dramatic factory scene with a conveyor belt where glowing cars are being assembled by powerful robot arms, sparks flying.",
-    "A student figure watches through a viewing window, taking notes on a clipboard.",
+    "A wide factory floor seen from a high angle: a conveyor belt stretches across the frame with half-assembled cars. Robot arms weld and bolt parts together, orange sparks flying.",
+    "Industrial blue-grey tones, glowing welding light illuminating the scene. No people, pure machinery.",
     group="topics")
 
 img("topic-subjects",  "topics/unit6-subjects.webp",
-    "A dynamic ring of floating school subject icons orbiting a central glowing globe: a bubbling flask, a paintbrush with paint splatter, a football mid-kick, a musical note, a calculator, a compass.",
-    "Students stand below looking up at the orbiting icons in a grand school hall.",
+    "A school hallway with six open classroom doors, each revealing a different subject: a bubbling chemistry flask, an easel with paint, a football on grass, a piano keyboard, a spinning globe, a chalkboard with equations.",
+    "Wide perspective shot down the hallway, each door glowing with its own colour.",
     group="topics")
 
 img("topic-altamira",  "topics/unit7-altamira.webp",
-    "Inside a vast, dimly lit prehistoric cave, ancient paintings of bison and horses glow on the rocky walls with warm amber torchlight.",
-    "A young explorer figure holds up a torch, illuminating the cave art with dramatic shadows cast across the cavern.",
+    "A wide panoramic view inside a prehistoric cave: ancient paintings of running bison and horse herds stretch across the curved rock wall, lit by warm amber firelight from the bottom.",
+    "No people — just the ancient art and the cave. Deep shadows above, warm glow below. Landscape framing.",
     group="topics")
 
 img("topic-quixote",   "topics/unit7-quixote.webp",
-    "Don Quixote in battered armor charges on his thin horse towards enormous windmills silhouetted against a dramatic sunset sky.",
-    "Sancho Panza watches from behind a rock, shaking his head. The Spanish countryside stretches out with rolling golden hills.",
+    "Wide landscape: Don Quixote on his skinny horse charges from the left towards three towering windmills on the right, silhouetted against a fiery sunset. Sancho Panza sits on a donkey far behind, a tiny figure.",
+    "Rolling golden Spanish plains stretch across the frame. Epic cinematic wide shot.",
     group="topics")
 
 # --- Unit 6 topic illustrations ---
 img("topic-maps",      "topics/unit6-maps.webp",
-    "A giant treasure-style map unfurls across a table, with a glowing blue compass rose, dotted paths, and 3D landmark icons rising from the surface — a school, park, library.",
-    "A group of students leans over the map, tracing routes with their fingers, an adventure-planning scene.",
+    "An old parchment map fills the entire frame, seen from directly above. Dotted paths wind between 3D miniature landmarks — a tiny school building, a green park with trees, a library with columns. A glowing compass rose sits in the corner.",
+    "Flat overhead view, the map edges curl up slightly. Warm parchment tones against the grey palette.",
     group="topics")
 
 img("topic-technology","topics/unit6-technology.webp",
-    "A sleek desk setup with a glowing laptop, tablet and smartphone, holographic wifi symbols and download arrows floating above the screens.",
-    "A student figure interacts with the holographic interface, swiping and tapping mid-air.",
+    "A modern desk from a three-quarter overhead angle: a laptop screen glows blue, a tablet and phone lie beside it, holographic wifi arcs and download arrows float above the devices.",
+    "Clean minimalist desk, dark background, the devices are the only light source. No people.",
     group="topics")
 
 img("topic-modals",    "topics/unit6-modals.webp",
-    "Three imposing road signs dominate the scene: a green sign with a glowing thumbs up, a blue sign with a bold exclamation mark, and a red sign with a sharp X.",
-    "Students walk along a path, choosing which direction to follow at the crossroads of rules.",
+    "A crossroads seen from above: three bold road signs point in different directions — a green circular sign (allowed), a blue square sign (required), and a red triangular sign (forbidden). The roads glow faintly where they lead.",
+    "Overhead perspective, the intersection centered in the wide frame. No people.",
     group="topics")
 
 # --- Listening illustrations ---
 img("listen-directions","topics/listen-directions.webp",
-    "A person stands at a city crossroads, looking at glowing directional signs and floating map pins pointing different ways.",
-    "Buildings frame the scene, and blue navigation arrows hover in the air showing possible routes.",
+    "An aerial view of a miniature city model on a table: tiny buildings, streets, and parks. Glowing blue dotted arrows trace a route through the streets, showing directions.",
+    "Tilt-shift photography feel, shallow depth of field, warm lighting on the model.",
     group="topics")
 
 img("listen-appearance","topics/listen-appearance.webp",
-    "Two young characters face each other, with glowing blue holographic icons floating between them — icons of different hairstyles, eye colours, and heights.",
-    "They gesture at the icons as if describing each other, in a bright modern school courtyard.",
+    "Two comic-book character profiles face each other from opposite sides of the frame, with a VS-style split between them. Each has exaggerated distinct features: one with short dark curly hair and freckles, the other with long straight blonde hair and glasses.",
+    "Bold comic panel divider in the center, each side with its own color accent.",
     group="topics")
 
 
@@ -211,8 +214,26 @@ img("listen-appearance","topics/listen-appearance.webp",
 # ---------------------------------------------------------------------------
 
 def save_image(image_data: bytes, output_path: Path):
-    """Resize and save image bytes as WebP."""
+    """Center-crop to target aspect ratio, then resize. Saves as WebP."""
     image = Image.open(io.BytesIO(image_data))
+    w, h = image.size
+    target_w, target_h = SIZE
+    target_ratio = target_w / target_h  # e.g. 768/400 = 1.92
+
+    # Crop to target aspect ratio from center
+    current_ratio = w / h
+    if current_ratio > target_ratio:
+        # Image is wider than needed — crop sides
+        new_w = int(h * target_ratio)
+        left = (w - new_w) // 2
+        image = image.crop((left, 0, left + new_w, h))
+    elif current_ratio < target_ratio:
+        # Image is taller than needed — crop top/bottom
+        new_h = int(w / target_ratio)
+        top = (h - new_h) // 2
+        image = image.crop((0, top, w, top + new_h))
+
+    # Resize to exact target
     image = image.resize(SIZE, Image.LANCZOS)
     image.save(str(output_path), "WEBP", quality=85)
     file_size = output_path.stat().st_size / 1024
