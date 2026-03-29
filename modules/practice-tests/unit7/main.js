@@ -1,13 +1,14 @@
 (async () => {
+  const IMG = "../../../images/topics/";
   const SECTION_META = {
-    "look-like":        { icon: "👤", color: "rose" },
-    "zero-conditional": { icon: "🔄", color: "blue" },
-    jobs:               { icon: "💼", color: "teal" },
-    adjectives:         { icon: "🌟", color: "orange" },
-    "passive-voice":    { icon: "📝", color: "purple" },
-    subjects:           { icon: "🏫", color: "indigo" },
-    "altamira-caves":   { icon: "🎨", color: "amber" },
-    "don-quixote":      { icon: "⚔️", color: "emerald" },
+    "look-like":        { icon: "👤", color: "rose",    image: IMG + "unit7-look-like.webp" },
+    "zero-conditional": { icon: "🔄", color: "blue",    image: IMG + "unit7-zero-conditional.webp" },
+    jobs:               { icon: "💼", color: "teal",    image: IMG + "unit7-jobs.webp" },
+    adjectives:         { icon: "🌟", color: "orange",  image: IMG + "unit7-adjectives.webp" },
+    "passive-voice":    { icon: "📝", color: "purple",  image: IMG + "unit5-passive.webp" },
+    subjects:           { icon: "🏫", color: "indigo",  image: IMG + "unit6-subjects.webp" },
+    "altamira-caves":   { icon: "🎨", color: "amber",   image: IMG + "unit7-altamira.webp" },
+    "don-quixote":      { icon: "⚔️", color: "emerald", image: IMG + "unit7-quixote.webp" },
   };
 
   const READING_PICK = 2; // number of reading sections per test
@@ -35,6 +36,15 @@
     const block = document.createElement("div");
     block.className = "section-block";
     block.dataset.color = meta.color;
+
+    // --- image banner ---
+    if (meta.image) {
+      const img = document.createElement("img");
+      img.className = "section-img";
+      img.src = meta.image;
+      img.alt = "";
+      block.appendChild(img);
+    }
 
     // --- header ---
     const hdr = document.createElement("div");

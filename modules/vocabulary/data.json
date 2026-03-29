@@ -12,6 +12,7 @@
           "title": "Technology Words",
           "icon": "💻",
           "color": "indigo",
+          "image": "../../images/topics/unit6-technology.webp",
           "type": "match",
           "instructions": "Match each technology word to its definition.",
           "pairs": [
@@ -37,6 +38,7 @@
           "title": "Map & Direction Words",
           "icon": "🗺️",
           "color": "teal",
+          "image": "../../images/topics/unit6-maps.webp",
           "type": "match",
           "instructions": "Match each map or direction word to its meaning.",
           "pairs": [
@@ -114,6 +116,7 @@
           "title": "Jobs",
           "icon": "💼",
           "color": "teal",
+          "image": "../../images/topics/unit7-jobs.webp",
           "type": "match",
           "instructions": "Match each description to the correct job.",
           "pairs": [
@@ -139,6 +142,7 @@
           "title": "Personality Adjectives",
           "icon": "🌟",
           "color": "orange",
+          "image": "../../images/topics/unit7-adjectives.webp",
           "type": "match",
           "instructions": "Match each description to the correct personality adjective.",
           "pairs": [

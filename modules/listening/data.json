@@ -12,6 +12,7 @@
           "title": "Directions & Places",
           "icon": "🗺️",
           "color": "teal",
+          "image": "../../images/topics/listen-directions.webp",
           "type": "listen-write",
           "instructions": "Listen to each sentence and type what you hear.",
           "questions": [
@@ -34,6 +35,7 @@
           "title": "Rules & Advice",
           "icon": "📋",
           "color": "blue",
+          "image": "../../images/topics/unit6-modals.webp",
           "type": "listen-choice",
           "instructions": "Listen to the sentence and choose what you hear.",
           "questions": [
@@ -54,6 +56,7 @@
           "title": "Technology",
           "icon": "💻",
           "color": "indigo",
+          "image": "../../images/topics/unit6-technology.webp",
           "type": "listen-write",
           "instructions": "Listen to each sentence and type what you hear.",
           "questions": [
@@ -81,6 +84,7 @@
           "title": "Jobs",
           "icon": "💼",
           "color": "teal",
+          "image": "../../images/topics/unit7-jobs.webp",
           "type": "listen-write",
           "instructions": "Listen to each sentence and type what you hear.",
           "questions": [
@@ -103,6 +107,7 @@
           "title": "Appearance & Personality",
           "icon": "👤",
           "color": "rose",
+          "image": "../../images/topics/listen-appearance.webp",
           "type": "listen-choice",
           "instructions": "Listen to the sentence and choose what you hear.",
           "questions": [
@@ -123,6 +128,7 @@
           "title": "Zero Conditional",
           "icon": "🔄",
           "color": "blue",
+          "image": "../../images/topics/unit7-zero-conditional.webp",
           "type": "listen-write",
           "instructions": "Listen to each sentence and type what you hear.",
           "questions": [
@@ -143,6 +149,7 @@
           "title": "Passive Voice",
           "icon": "📝",
           "color": "purple",
+          "image": "../../images/topics/unit5-passive.webp",
           "type": "listen-choice",
           "instructions": "Listen to the sentence and choose what you hear.",
           "questions": [

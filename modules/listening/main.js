@@ -147,6 +147,15 @@
       block.className = "section-block";
       block.dataset.color = section.color || "blue";
 
+      // --- image banner ---
+      if (section.image) {
+        const img = document.createElement("img");
+        img.className = "section-img";
+        img.src = section.image;
+        img.alt = "";
+        block.appendChild(img);
+      }
+
       const hdr = document.createElement("div");
       hdr.className = "section-header";
       hdr.innerHTML =

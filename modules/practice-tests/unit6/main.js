@@ -1,10 +1,11 @@
 (async () => {
+  const IMG = "../../../images/topics/";
   const SECTION_META = {
-    modals:        { icon: "📋", color: "blue" },
-    maps:          { icon: "🗺️", color: "teal" },
-    subjects:      { icon: "🏫", color: "purple" },
+    modals:        { icon: "📋", color: "blue",    image: IMG + "unit6-modals.webp" },
+    maps:          { icon: "🗺️", color: "teal",    image: IMG + "unit6-maps.webp" },
+    subjects:      { icon: "🏫", color: "purple",  image: IMG + "unit6-subjects.webp" },
     "good-at":     { icon: "⭐", color: "orange" },
-    "tech-vocab":  { icon: "💻", color: "indigo" },
+    "tech-vocab":  { icon: "💻", color: "indigo",  image: IMG + "unit6-technology.webp" },
     cappadocia:    { icon: "🏔️", color: "sky" },
     "the-project": { icon: "📚", color: "emerald" },
     "barrier-reef":{ icon: "🐠", color: "sky" },
@@ -38,6 +39,15 @@
     const block = document.createElement("div");
     block.className = "section-block";
     block.dataset.color = meta.color;
+
+    // --- image banner ---
+    if (meta.image) {
+      const img = document.createElement("img");
+      img.className = "section-img";
+      img.src = meta.image;
+      img.alt = "";
+      block.appendChild(img);
+    }
 
     // --- header ---
     const hdr = document.createElement("div");
