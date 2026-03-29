@@ -1,0 +1,216 @@
+{
+  "title": "Grammar",
+  "questionsPerSection": 8,
+  "units": [
+    {
+      "id": "unit5",
+      "title": "Unit 5",
+      "color": "amber",
+      "sections": [
+        {
+          "id": "made-of",
+          "title": "Made of",
+          "icon": "🔧",
+          "color": "amber",
+          "image": "../../images/topics/unit5-passive.webp",
+          "type": "fill-choice",
+          "instructions": "Complete each sentence with the correct form of 'made of'. Remember: singular things use 'is made of', plural things use 'are made of'.",
+          "questions": [
+            { "sentence": "The table ___ wood. It's very strong.", "options": ["is made of", "are made of", "made of", "makes of"], "answer": "is made of", "explanation": "'The table' is singular (it), so we use 'is made of'." },
+            { "sentence": "These earrings ___ silver. They're very pretty.", "options": ["are made of", "is made of", "made of", "makes of"], "answer": "are made of", "explanation": "'These earrings' is plural (they), so we use 'are made of'." },
+            { "sentence": "The window ___ glass. Be careful!", "options": ["is made of", "are made of", "made of", "was made"], "answer": "is made of", "explanation": "'The window' is singular (it), so we use 'is made of'." },
+            { "sentence": "My boots ___ leather. They keep my feet dry.", "options": ["are made of", "is made of", "made of", "makes of"], "answer": "are made of", "explanation": "'My boots' is plural (they), so we use 'are made of'." },
+            { "sentence": "The bridge ___ metal. It's very heavy.", "options": ["is made of", "are made of", "made of", "makes of"], "answer": "is made of", "explanation": "'The bridge' is singular (it), so we use 'is made of'." },
+            { "sentence": "These gloves ___ wool. They're warm and soft.", "options": ["are made of", "is made of", "made of", "was made"], "answer": "are made of", "explanation": "'These gloves' is plural (they), so we use 'are made of'." },
+            { "sentence": "What ___ your bag ___? It looks nice.", "options": ["is ... made of", "are ... made of", "does ... made of", "do ... made of"], "answer": "is ... made of", "explanation": "'Your bag' is singular, so the question form is 'What is ... made of?'" },
+            { "sentence": "The keys ___ metal. You can hear them jingle.", "options": ["are made of", "is made of", "made of", "makes of"], "answer": "are made of", "explanation": "'The keys' is plural (they), so we use 'are made of'." },
+            { "sentence": "This bottle ___ plastic. It's light and cheap.", "options": ["is made of", "are made of", "made of", "makes of"], "answer": "is made of", "explanation": "'This bottle' is singular (it), so we use 'is made of'." },
+            { "sentence": "The puppets ___ card and paper.", "options": ["are made of", "is made of", "made of", "was made"], "answer": "are made of", "explanation": "'The puppets' is plural (they), so we use 'are made of'." },
+            { "sentence": "Her necklace ___ gold. It's beautiful.", "options": ["is made of", "are made of", "made of", "makes of"], "answer": "is made of", "explanation": "'Her necklace' is singular (it), so we use 'is made of'." },
+            { "sentence": "What ___ those coins ___?", "options": ["are ... made of", "is ... made of", "does ... made of", "do ... made of"], "answer": "are ... made of", "explanation": "'Those coins' is plural, so the question form is 'What are ... made of?'" },
+            { "sentence": "The bookmark ___ card. I made it myself.", "options": ["is made of", "are made of", "made of", "makes of"], "answer": "is made of", "explanation": "'The bookmark' is singular (it), so we use 'is made of'." },
+            { "sentence": "These tyres ___ rubber. They bounce a lot.", "options": ["are made of", "is made of", "made of", "was made"], "answer": "are made of", "explanation": "'These tyres' is plural (they), so we use 'are made of'." },
+            { "sentence": "The vase ___ glass. Don't drop it!", "options": ["is made of", "are made of", "made of", "makes of"], "answer": "is made of", "explanation": "'The vase' is singular (it), so we use 'is made of'." },
+            { "sentence": "My sunglasses ___ plastic. They were very cheap.", "options": ["are made of", "is made of", "made of", "makes of"], "answer": "are made of", "explanation": "'My sunglasses' is plural (they), so we use 'are made of'." }
+          ]
+        },
+        {
+          "id": "suggestions",
+          "title": "Making Suggestions",
+          "icon": "💡",
+          "color": "teal",
+          "type": "fill-choice",
+          "instructions": "Choose the correct word to complete each suggestion. Remember: 'Let's' + verb, 'Shall we' + verb?, 'We could' + verb.",
+          "questions": [
+            { "sentence": "___ visit the new museum this weekend!", "options": ["Let's", "Shall", "We could we", "Must"], "answer": "Let's", "explanation": "'Let's' + base verb makes a direct suggestion to do something together." },
+            { "sentence": "___ we go for a walk after lunch?", "options": ["Shall", "Let's", "We could we", "Must"], "answer": "Shall", "explanation": "'Shall we ...?' is a polite question to suggest an activity together." },
+            { "sentence": "___ try that new pizza place near school.", "options": ["We could", "Shall", "Let's we", "Must we"], "answer": "We could", "explanation": "'We could' + base verb suggests a possibility or an idea." },
+            { "sentence": "___ play basketball in the garden!", "options": ["Let's", "Shall", "Could we", "Have to"], "answer": "Let's", "explanation": "'Let's' + base verb is used for an enthusiastic suggestion." },
+            { "sentence": "___ we invite Maria to the party?", "options": ["Shall", "Let's", "Could", "We"], "answer": "Shall", "explanation": "'Shall we ...?' politely asks whether we should do something." },
+            { "sentence": "___ bring sandwiches for the picnic.", "options": ["We could", "Shall", "Let's we", "Must"], "answer": "We could", "explanation": "'We could' offers a softer suggestion — it's just an idea." },
+            { "sentence": "___ watch a comedy tonight!", "options": ["Let's", "Shall", "We could we", "Have to"], "answer": "Let's", "explanation": "'Let's' is a direct, enthusiastic way to suggest something." },
+            { "sentence": "___ we have a barbecue on Saturday?", "options": ["Shall", "Let's", "We could we", "Must"], "answer": "Shall", "explanation": "'Shall we ...?' is a question asking for agreement about a plan." },
+            { "sentence": "___ paint the walls a different colour.", "options": ["We could", "Shall", "Let's we", "Must we"], "answer": "We could", "explanation": "'We could' proposes a possible idea without being too direct." },
+            { "sentence": "___ make a card for grandma's birthday!", "options": ["Let's", "Shall", "Could", "Must"], "answer": "Let's", "explanation": "'Let's' + base verb is a suggestion to do something together right now." },
+            { "sentence": "___ we take the bus or walk?", "options": ["Shall", "Let's", "We could we", "Have to"], "answer": "Shall", "explanation": "'Shall we ...?' asks the other person for their preference." },
+            { "sentence": "___ read our books in the park.", "options": ["We could", "Shall", "Let's we", "Must"], "answer": "We could", "explanation": "'We could' gently suggests a possibility." },
+            { "sentence": "___ tidy up the classroom before we leave!", "options": ["Let's", "Shall", "We could we", "Have to"], "answer": "Let's", "explanation": "'Let's' makes a direct suggestion for a group action." },
+            { "sentence": "___ we start the project today?", "options": ["Shall", "Let's", "Could", "Must"], "answer": "Shall", "explanation": "'Shall we ...?' is the question form used for suggestions." },
+            { "sentence": "___ ask the teacher for more time.", "options": ["We could", "Shall", "Let's we", "Must we"], "answer": "We could", "explanation": "'We could' offers a suggestion as a possibility." },
+            { "sentence": "___ go swimming after school!", "options": ["Let's", "Shall", "We could we", "Must"], "answer": "Let's", "explanation": "'Let's' is used for enthusiastic, direct suggestions." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit6",
+      "title": "Unit 6",
+      "color": "rose",
+      "sections": [
+        {
+          "id": "modals",
+          "title": "Modals: must / should / have to / can't / mustn't",
+          "icon": "📋",
+          "color": "indigo",
+          "image": "../../images/topics/unit6-modals.webp",
+          "type": "fill-choice",
+          "instructions": "Choose the correct modal verb. Think about: obligation (must, have to), advice (should), prohibition (can't, mustn't).",
+          "questions": [
+            { "sentence": "You ___ bring your own pencils to the exam. The school doesn't provide them.", "options": ["have to", "should", "can't", "mustn't"], "answer": "have to", "explanation": "'Have to' expresses an external obligation — the school requires it." },
+            { "sentence": "You ___ drink more water during summer. It's really good for you.", "options": ["should", "must", "have to", "can't"], "answer": "should", "explanation": "'Should' gives advice — it's a good idea, but nobody forces you." },
+            { "sentence": "You ___ touch the paintings in the gallery. It's strictly forbidden.", "options": ["mustn't", "shouldn't", "don't have to", "can"], "answer": "mustn't", "explanation": "'Mustn't' is a strong prohibition — touching paintings is forbidden." },
+            { "sentence": "We ___ be at the airport by 7 a.m. Our flight leaves at 9.", "options": ["have to", "should", "can't", "mustn't"], "answer": "have to", "explanation": "'Have to' because the flight schedule creates an external obligation." },
+            { "sentence": "You ___ feed the animals at the zoo. There are signs everywhere.", "options": ["can't", "should", "must", "have to"], "answer": "can't", "explanation": "'Can't' means it's not allowed — the zoo prohibits feeding animals." },
+            { "sentence": "You ___ always wear a helmet when you ride a bicycle.", "options": ["should", "can't", "mustn't", "shouldn't"], "answer": "should", "explanation": "'Should' gives safety advice — it's strongly recommended." },
+            { "sentence": "All students ___ arrive before 8:30. It's a school rule.", "options": ["must", "should", "can't", "shouldn't"], "answer": "must", "explanation": "'Must' is used for official rules and regulations." },
+            { "sentence": "She ___ practise the piano every day. Her teacher insists.", "options": ["has to", "should", "can't", "mustn't"], "answer": "has to", "explanation": "'Has to' because the teacher insists — it's an external obligation (third person: has to)." },
+            { "sentence": "You ___ take an umbrella today. The forecast says rain.", "options": ["should", "must", "have to", "can't"], "answer": "should", "explanation": "'Should' gives a recommendation based on the weather forecast." },
+            { "sentence": "You ___ shout in the hospital. People are resting.", "options": ["mustn't", "shouldn't", "don't have to", "can"], "answer": "mustn't", "explanation": "'Mustn't' is a strong prohibition — shouting in a hospital is forbidden." },
+            { "sentence": "He ___ wear a tie to work. His company has a dress code.", "options": ["has to", "should", "can't", "mustn't"], "answer": "has to", "explanation": "'Has to' because the company rule creates an external obligation." },
+            { "sentence": "You ___ eat in the computer room. Food is not allowed.", "options": ["can't", "should", "must", "have to"], "answer": "can't", "explanation": "'Can't' means it's not permitted — food is banned in the computer room." },
+            { "sentence": "I think you ___ try the new bookshop. They have great books.", "options": ["should", "must", "have to", "can't"], "answer": "should", "explanation": "'I think you should ...' gives a friendly recommendation." },
+            { "sentence": "Everyone ___ follow the fire safety rules. They protect lives.", "options": ["must", "should", "can't", "shouldn't"], "answer": "must", "explanation": "'Must' is used for important safety rules that apply to everyone." },
+            { "sentence": "You ___ use your phone during the concert. Please turn it off.", "options": ["mustn't", "shouldn't", "don't have to", "can"], "answer": "mustn't", "explanation": "'Mustn't' is a prohibition — using phones during the concert is forbidden." },
+            { "sentence": "We ___ clean up the classroom. The teacher told us.", "options": ["have to", "should", "can't", "mustn't"], "answer": "have to", "explanation": "'Have to' because the teacher told us — it's an external obligation." },
+            { "sentence": "You ___ go to bed earlier. You look very tired.", "options": ["should", "must", "have to", "can't"], "answer": "should", "explanation": "'Should' gives caring advice — it's a suggestion, not an order." },
+            { "sentence": "You ___ cross the road without looking. It's very dangerous!", "options": ["mustn't", "shouldn't", "don't have to", "can"], "answer": "mustn't", "explanation": "'Mustn't' is a strong prohibition — it's forbidden because of the danger." }
+          ]
+        },
+        {
+          "id": "prepositions-direction",
+          "title": "Prepositions of Direction",
+          "icon": "🧭",
+          "color": "teal",
+          "image": "../../images/topics/unit6-maps.webp",
+          "type": "fill-choice",
+          "instructions": "Choose the correct preposition to complete each direction or location sentence.",
+          "questions": [
+            { "sentence": "Walk ___ the street until you reach the traffic lights.", "options": ["along", "across", "through", "between"], "answer": "along", "explanation": "'Along' means following the length of the street." },
+            { "sentence": "The pharmacy is ___ the bakery. It's directly on the other side of the road.", "options": ["opposite", "next to", "between", "along"], "answer": "opposite", "explanation": "'Opposite' means facing something, on the other side." },
+            { "sentence": "Go ___ the tunnel and turn left at the exit.", "options": ["through", "across", "along", "past"], "answer": "through", "explanation": "'Through' means entering one end and coming out the other." },
+            { "sentence": "The school is ___ the park and the supermarket.", "options": ["between", "opposite", "next to", "through"], "answer": "between", "explanation": "'Between' means in the middle of two things." },
+            { "sentence": "Walk ___ the bridge to get to the other side of the river.", "options": ["across", "along", "through", "past"], "answer": "across", "explanation": "'Across' means from one side to the other." },
+            { "sentence": "The post office is right ___ the bank. They share a wall.", "options": ["next to", "opposite", "between", "through"], "answer": "next to", "explanation": "'Next to' means directly beside something." },
+            { "sentence": "Continue ___ the church and the hospital is on your right.", "options": ["past", "through", "along", "between"], "answer": "past", "explanation": "'Past' means going by something without stopping." },
+            { "sentence": "Go ___ at the roundabout and take the third exit.", "options": ["round", "across", "through", "along"], "answer": "round", "explanation": "'Round' (or 'around') is used with roundabouts — you go round them." },
+            { "sentence": "Take the first turning ___ the right.", "options": ["on", "at", "in", "by"], "answer": "on", "explanation": "We say 'on the right' or 'on the left' when giving directions." },
+            { "sentence": "The station is ___ the end of this road.", "options": ["at", "on", "in", "by"], "answer": "at", "explanation": "We say 'at the end of' to describe a point at the far part of a road." },
+            { "sentence": "Walk ___ the park — it's a shortcut.", "options": ["through", "across", "past", "along"], "answer": "through", "explanation": "'Through' means going inside and coming out the other side." },
+            { "sentence": "The cinema is ___ the left, just after the petrol station.", "options": ["on", "at", "in", "by"], "answer": "on", "explanation": "We say 'on the left' or 'on the right' for positions in directions." },
+            { "sentence": "Go ___ on this road. Don't turn anywhere.", "options": ["straight", "round", "past", "through"], "answer": "straight", "explanation": "'Go straight' means continue forward without turning." },
+            { "sentence": "Turn left ___ the crossroads.", "options": ["at", "on", "in", "by"], "answer": "at", "explanation": "We say 'at the crossroads' — at a specific point or junction." },
+            { "sentence": "The toy shop is ___ the bookshop and the cafe.", "options": ["between", "opposite", "next to", "along"], "answer": "between", "explanation": "'Between' means in the middle of two places." },
+            { "sentence": "Walk ___ the river until you see the old mill.", "options": ["along", "across", "through", "past"], "answer": "along", "explanation": "'Along' means following beside the river." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit7",
+      "title": "Unit 7",
+      "color": "blue",
+      "sections": [
+        {
+          "id": "zero-conditional",
+          "title": "Zero Conditional",
+          "icon": "🔬",
+          "color": "purple",
+          "image": "../../images/topics/unit7-zero-conditional.webp",
+          "type": "fill-choice",
+          "instructions": "Complete each zero conditional sentence. Remember: If/When + present simple, + present simple. Used for things that are always true.",
+          "questions": [
+            { "sentence": "If you ___ salt to water, it dissolves.", "options": ["add", "adds", "added", "adding"], "answer": "add", "explanation": "Zero conditional: 'you' takes the base form of the verb → 'add'." },
+            { "sentence": "When the temperature ___ below zero, water freezes.", "options": ["drops", "drop", "dropped", "dropping"], "answer": "drops", "explanation": "Zero conditional: 'the temperature' is third person singular → 'drops'." },
+            { "sentence": "If a cat ___ happy, it purrs.", "options": ["is", "are", "be", "being"], "answer": "is", "explanation": "Zero conditional: 'a cat' is third person singular → 'is'." },
+            { "sentence": "When you ___ exercise, you feel better.", "options": ["do", "does", "did", "doing"], "answer": "do", "explanation": "Zero conditional: 'you' takes the base form → 'do'." },
+            { "sentence": "If it ___ in winter, the ground turns white.", "options": ["snows", "snow", "snowed", "snowing"], "answer": "snows", "explanation": "Zero conditional: 'it' is third person singular → 'snows'." },
+            { "sentence": "When you ___ a balloon, it pops.", "options": ["squeeze", "squeezes", "squeezed", "squeezing"], "answer": "squeeze", "explanation": "Zero conditional: 'you' takes the base form → 'squeeze'." },
+            { "sentence": "If plants ___ enough sunlight, they grow.", "options": ["get", "gets", "got", "getting"], "answer": "get", "explanation": "Zero conditional: 'plants' is plural → base form 'get'." },
+            { "sentence": "When you ___ lemon juice to milk, it curdles.", "options": ["add", "adds", "added", "adding"], "answer": "add", "explanation": "Zero conditional: 'you' takes the base form → 'add'." },
+            { "sentence": "If a dog ___ scared, it barks.", "options": ["feels", "feel", "felt", "feeling"], "answer": "feels", "explanation": "Zero conditional: 'a dog' is third person singular → 'feels'." },
+            { "sentence": "When the alarm ___, everyone leaves the building.", "options": ["rings", "ring", "rang", "ringing"], "answer": "rings", "explanation": "Zero conditional: 'the alarm' is third person singular → 'rings'." },
+            { "sentence": "If you ___ enough sleep, you can't concentrate.", "options": ["don't get", "doesn't get", "didn't get", "not get"], "answer": "don't get", "explanation": "Zero conditional negative: 'you' → 'don't' + base form." },
+            { "sentence": "When the sun ___, flowers open their petals.", "options": ["rises", "rise", "rose", "rising"], "answer": "rises", "explanation": "Zero conditional: 'the sun' is third person singular → 'rises'." },
+            { "sentence": "If you ___ a magnet near iron, it sticks.", "options": ["put", "puts", "putted", "putting"], "answer": "put", "explanation": "Zero conditional: 'you' takes the base form → 'put'." },
+            { "sentence": "When birds ___ food, they fly south.", "options": ["don't find", "doesn't find", "didn't find", "not find"], "answer": "don't find", "explanation": "Zero conditional negative: 'birds' is plural → 'don't find'." },
+            { "sentence": "If you ___ sugar in tea, it tastes sweet.", "options": ["put", "puts", "putted", "putting"], "answer": "put", "explanation": "Zero conditional: 'you' takes the base form → 'put'." },
+            { "sentence": "When wood ___ wet, it becomes heavier.", "options": ["gets", "get", "got", "getting"], "answer": "gets", "explanation": "Zero conditional: 'wood' is third person singular (it) → 'gets'." }
+          ]
+        },
+        {
+          "id": "passive-voice",
+          "title": "Passive Voice",
+          "icon": "🔄",
+          "color": "rose",
+          "type": "fill-choice",
+          "instructions": "Complete each sentence with the correct passive form. Remember: singular subjects use 'is + past participle', plural subjects use 'are + past participle'.",
+          "questions": [
+            { "sentence": "Bread ___ in a bakery.", "options": ["is made", "are made", "makes", "making"], "answer": "is made", "explanation": "'Bread' is singular (it) → 'is' + past participle." },
+            { "sentence": "These books ___ by millions of children.", "options": ["are read", "is read", "reads", "reading"], "answer": "are read", "explanation": "'These books' is plural (they) → 'are' + past participle." },
+            { "sentence": "Coffee ___ in Brazil and Colombia.", "options": ["is grown", "are grown", "grows", "growing"], "answer": "is grown", "explanation": "'Coffee' is singular (it) → 'is' + past participle." },
+            { "sentence": "The streets ___ every morning by the council.", "options": ["are cleaned", "is cleaned", "cleans", "cleaning"], "answer": "are cleaned", "explanation": "'The streets' is plural (they) → 'are' + past participle." },
+            { "sentence": "Spanish ___ in more than 20 countries.", "options": ["is spoken", "are spoken", "speaks", "speaking"], "answer": "is spoken", "explanation": "'Spanish' is singular (it) → 'is' + past participle." },
+            { "sentence": "Computers ___ in offices and schools.", "options": ["are used", "is used", "uses", "using"], "answer": "are used", "explanation": "'Computers' is plural (they) → 'are' + past participle." },
+            { "sentence": "The newspaper ___ every morning.", "options": ["is delivered", "are delivered", "delivers", "delivering"], "answer": "is delivered", "explanation": "'The newspaper' is singular (it) → 'is' + past participle." },
+            { "sentence": "Oranges ___ in warm countries.", "options": ["are grown", "is grown", "grows", "growing"], "answer": "are grown", "explanation": "'Oranges' is plural (they) → 'are' + past participle." },
+            { "sentence": "Chocolate ___ from cocoa beans.", "options": ["is made", "are made", "makes", "making"], "answer": "is made", "explanation": "'Chocolate' is singular (it) → 'is' + past participle." },
+            { "sentence": "The museum doors ___ at 9 o'clock every day.", "options": ["are opened", "is opened", "opens", "opening"], "answer": "are opened", "explanation": "'The museum doors' is plural (they) → 'are' + past participle." },
+            { "sentence": "This song ___ on the radio every day.", "options": ["is played", "are played", "plays", "playing"], "answer": "is played", "explanation": "'This song' is singular (it) → 'is' + past participle." },
+            { "sentence": "The school buses ___ by professional drivers.", "options": ["are driven", "is driven", "drives", "driving"], "answer": "are driven", "explanation": "'The school buses' is plural (they) → 'are' + past participle." },
+            { "sentence": "Italian ___ in Italy and parts of Switzerland.", "options": ["is spoken", "are spoken", "speaks", "speaking"], "answer": "is spoken", "explanation": "'Italian' is singular (it) → 'is' + past participle." },
+            { "sentence": "These cakes ___ fresh every morning.", "options": ["are baked", "is baked", "bakes", "baking"], "answer": "are baked", "explanation": "'These cakes' is plural (they) → 'are' + past participle." },
+            { "sentence": "The homework ___ by the teacher every week.", "options": ["is corrected", "are corrected", "corrects", "correcting"], "answer": "is corrected", "explanation": "'The homework' is singular (it) → 'is' + past participle." },
+            { "sentence": "These photos ___ by a professional photographer.", "options": ["are taken", "is taken", "takes", "taking"], "answer": "are taken", "explanation": "'These photos' is plural (they) → 'are' + past participle." }
+          ]
+        },
+        {
+          "id": "look-like",
+          "title": "Look like / Be like / Like",
+          "icon": "👀",
+          "color": "blue",
+          "image": "../../images/topics/unit7-look-like.webp",
+          "type": "fill-choice",
+          "instructions": "Choose the correct question or answer. 'What does he look like?' = appearance, 'What is he like?' = personality, 'What does he like?' = preferences.",
+          "questions": [
+            { "sentence": "A: ___ B: She's tall with long black hair.", "options": ["What does she look like?", "What is she like?", "What does she like?", "How does she like?"], "answer": "What does she look like?", "explanation": "'Tall with long black hair' describes physical appearance → 'What does she look like?'" },
+            { "sentence": "A: ___ B: He's funny and very generous.", "options": ["What is he like?", "What does he look like?", "What does he like?", "How is he like?"], "answer": "What is he like?", "explanation": "'Funny and generous' are personality traits → 'What is he like?'" },
+            { "sentence": "A: ___ B: She likes reading and riding her bike.", "options": ["What does she like?", "What does she look like?", "What is she like?", "How does she like?"], "answer": "What does she like?", "explanation": "'Reading and riding her bike' are hobbies → 'What does she like?'" },
+            { "sentence": "A: What does your cousin look like? B: ___", "options": ["He's short with curly brown hair.", "He's really brave and clever.", "He likes playing chess.", "He's at home."], "answer": "He's short with curly brown hair.", "explanation": "'Look like' asks about physical appearance — hair, height, eyes, etc." },
+            { "sentence": "A: What is your neighbour like? B: ___", "options": ["She's very helpful and quiet.", "She's got blonde hair.", "She likes gardening.", "She's from Spain."], "answer": "She's very helpful and quiet.", "explanation": "'What is she like?' asks about personality — helpful, quiet, kind, etc." },
+            { "sentence": "A: What does your cat like? B: ___", "options": ["It likes sleeping and eating fish.", "It's small and fluffy.", "It's very playful.", "It's in the garden."], "answer": "It likes sleeping and eating fish.", "explanation": "'What does it like?' asks about preferences and favourite things." },
+            { "sentence": "A: ___ B: They're very kind and welcoming.", "options": ["What are they like?", "What do they look like?", "What do they like?", "How are they like?"], "answer": "What are they like?", "explanation": "'Kind and welcoming' describe personality → 'What are they like?'" },
+            { "sentence": "A: ___ B: He's got a beard and glasses.", "options": ["What does he look like?", "What is he like?", "What does he like?", "How does he look like?"], "answer": "What does he look like?", "explanation": "'A beard and glasses' describe physical appearance → 'What does he look like?'" },
+            { "sentence": "A: ___ B: They like going to the beach and cooking.", "options": ["What do they like?", "What do they look like?", "What are they like?", "How do they like?"], "answer": "What do they like?", "explanation": "'Going to the beach and cooking' are hobbies → 'What do they like?'" },
+            { "sentence": "A: What does your PE teacher look like? B: ___", "options": ["He's very tall and strong.", "He's strict but fair.", "He likes football.", "He's in the gym."], "answer": "He's very tall and strong.", "explanation": "'Look like' asks for a physical description — tall, strong, etc." },
+            { "sentence": "A: What is your grandma like? B: ___", "options": ["She's loving and patient.", "She's got grey hair.", "She likes knitting.", "She's 75 years old."], "answer": "She's loving and patient.", "explanation": "'What is she like?' asks about personality — loving, patient, etc." },
+            { "sentence": "A: What does your dog like? B: ___", "options": ["It likes running in the park.", "It's big and brown.", "It's very friendly.", "It's three years old."], "answer": "It likes running in the park.", "explanation": "'What does it like?' asks about what the dog enjoys doing." },
+            { "sentence": "A: ___ B: She's slim with straight brown hair and freckles.", "options": ["What does she look like?", "What is she like?", "What does she like?", "How does she look?"], "answer": "What does she look like?", "explanation": "'Slim, straight brown hair, freckles' are about physical appearance → 'What does she look like?'" },
+            { "sentence": "A: ___ B: He's shy but very creative.", "options": ["What is he like?", "What does he look like?", "What does he like?", "How is he like?"], "answer": "What is he like?", "explanation": "'Shy and creative' are personality traits → 'What is he like?'" },
+            { "sentence": "A: What do your friends like? B: ___", "options": ["They like skateboarding and video games.", "They're tall and slim.", "They're funny and kind.", "They're from London."], "answer": "They like skateboarding and video games.", "explanation": "'What do they like?' asks about hobbies and interests." },
+            { "sentence": "A: ___ B: He's got short red hair and blue eyes.", "options": ["What does he look like?", "What is he like?", "What does he like?", "How does he look?"], "answer": "What does he look like?", "explanation": "'Short red hair and blue eyes' describe physical appearance → 'What does he look like?'" }
+          ]
+        }
+      ]
+    }
+  ]
+}
