@@ -1,0 +1,103 @@
+{
+  "title": "Spelling",
+  "questionsPerSection": 10,
+  "units": [
+    {
+      "id": "unit5",
+      "title": "Unit 5",
+      "color": "amber",
+      "sections": [
+        {
+          "id": "materials-spelling",
+          "title": "Materials",
+          "icon": "\ud83e\uddf1",
+          "color": "amber",
+          "type": "spell",
+          "instructions": "Listen to the word, then type it correctly.",
+          "words": [
+            { "word": "rubber", "hint": "Erasers are made of this." },
+            { "word": "plastic", "hint": "Bottles are often made of this." },
+            { "word": "metal", "hint": "A hard, shiny material used for tools." },
+            { "word": "glass", "hint": "Windows are made of this transparent material." },
+            { "word": "wool", "hint": "Warm fabric that comes from sheep." },
+            { "word": "flexible", "hint": "Something that bends easily without breaking." },
+            { "word": "rigid", "hint": "The opposite of flexible; stiff and hard." },
+            { "word": "costume", "hint": "Special clothes worn for a performance or party." },
+            { "word": "labyrinth", "hint": "A maze with many confusing paths." },
+            { "word": "feathers", "hint": "Light, soft covering on birds." },
+            { "word": "heavy", "hint": "The opposite of light in weight." },
+            { "word": "smooth", "hint": "A surface with no bumps; the opposite of rough." },
+            { "word": "rough", "hint": "A surface that is not smooth; uneven." },
+            { "word": "tragedy", "hint": "A very sad story or event." },
+            { "word": "comedy", "hint": "A funny play or film that makes you laugh." },
+            { "word": "papier-m\u00e2ch\u00e9", "hint": "Craft material made from paper and glue." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit6",
+      "title": "Unit 6",
+      "color": "blue",
+      "sections": [
+        {
+          "id": "directions-tech-spelling",
+          "title": "Directions & Technology",
+          "icon": "\ud83e\udded",
+          "color": "blue",
+          "type": "spell",
+          "instructions": "Listen to the word, then type it correctly.",
+          "words": [
+            { "word": "straight", "hint": "Go in a line without turning." },
+            { "word": "opposite", "hint": "On the other side; facing something." },
+            { "word": "between", "hint": "In the middle of two things." },
+            { "word": "through", "hint": "Going in one side and out the other." },
+            { "word": "roundabout", "hint": "A circular junction where traffic goes around." },
+            { "word": "browser", "hint": "Software you use to visit websites." },
+            { "word": "download", "hint": "To save a file from the internet to your device." },
+            { "word": "password", "hint": "A secret word you type to log in." },
+            { "word": "charger", "hint": "A cable that gives power to your phone." },
+            { "word": "keyboard", "hint": "The part of a computer you type on." },
+            { "word": "volcano", "hint": "A mountain that can erupt with lava." },
+            { "word": "desert", "hint": "A very dry area with lots of sand." },
+            { "word": "geography", "hint": "The study of the Earth and its features." },
+            { "word": "political", "hint": "Related to governments and how countries are run." },
+            { "word": "physical", "hint": "Related to the body, or to real objects you can touch." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit7",
+      "title": "Unit 7",
+      "color": "purple",
+      "sections": [
+        {
+          "id": "jobs-adjectives-spelling",
+          "title": "Jobs & Adjectives",
+          "icon": "\ud83d\udcbc",
+          "color": "purple",
+          "type": "spell",
+          "instructions": "Listen to the word, then type it correctly.",
+          "words": [
+            { "word": "photographer", "hint": "A person who takes photos for a living." },
+            { "word": "journalist", "hint": "A person who writes news stories." },
+            { "word": "acrobat", "hint": "A performer who does gymnastics and stunts." },
+            { "word": "designer", "hint": "A person who creates the look of things." },
+            { "word": "waiter", "hint": "A person who serves food in a restaurant." },
+            { "word": "interesting", "hint": "Something that keeps your attention; not boring." },
+            { "word": "unfriendly", "hint": "Not kind or welcoming to others." },
+            { "word": "popular", "hint": "Liked by many people." },
+            { "word": "brave", "hint": "Not afraid; showing courage." },
+            { "word": "clever", "hint": "Quick to learn and understand; smart." },
+            { "word": "conditional", "hint": "Depending on something else; an 'if' situation." },
+            { "word": "archaeologist", "hint": "A scientist who studies ancient objects and ruins." },
+            { "word": "windmill", "hint": "A building with blades that turn in the wind." },
+            { "word": "performance", "hint": "A show or act in front of an audience." },
+            { "word": "appearance", "hint": "The way someone or something looks." }
+          ]
+        }
+      ]
+    }
+  ]
+}
