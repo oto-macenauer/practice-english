@@ -1,6 +1,6 @@
 # Practice English
 
-A static vanilla JavaScript application for English language practice. Designed to be deployed on GitHub Pages with zero build steps.
+A static vanilla JavaScript application for English language practice. Designed to be deployed on GitHub Pages with zero build steps. Installable as a PWA on mobile and tablet.
 
 ## Live Site
 
@@ -11,37 +11,52 @@ Deployed via GitHub Pages from the `main` branch root (`/`).
 ```
 practice-english/
 ├── index.html                    # Landing page with module navigation
+├── manifest.json                 # PWA manifest
+├── sw.js                         # Service worker (offline support)
 ├── css/
 │   └── style.css                 # Shared styles (variables, layout, components)
 ├── js/
 │   └── app.js                    # Shared utilities (shuffle, feedback, data loading)
+├── images/
+│   ├── icons/                    # PWA icons (192/512, regular + maskable)
+│   ├── modules/                  # Homepage module card images
+│   ├── topics/                   # Section banner illustrations
+│   └── screenshots/              # PWA install screenshots
 ├── modules/
-│   ├── vocabulary/
-│   │   └── index.html            # Vocabulary exercises
-│   ├── grammar/
-│   │   └── index.html            # Grammar exercises
-│   ├── spelling/
-│   │   └── index.html            # Spelling exercises
-│   └── reading/
-│       └── index.html            # Reading comprehension exercises
-└── README.md
+│   ├── vocabulary/               # Word matching, definitions, context exercises
+│   ├── grammar/                  # Grammar exercises (placeholder)
+│   ├── spelling/                 # Spelling exercises (placeholder)
+│   ├── reading/                  # Reading comprehension with passages
+│   ├── listening/                # Listening comprehension with Speech Synthesis API
+│   └── practice-tests/
+│       ├── unit5/                # Unit 5 test (materials, passive voice, suggestions)
+│       ├── unit6/                # Unit 6 test (modals, maps, subjects, technology)
+│       └── unit7/                # Unit 7+ test (look like, zero conditional, jobs, adjectives)
+├── tools/
+│   ├── generate_images.py        # AI image generation script (Together AI / Gemini)
+│   ├── take_screenshots.py       # PWA screenshot capture (Playwright)
+│   └── requirements.txt          # Python dependencies
+└── sources/                      # Textbook reference photos (gitignored)
 ```
 
 ## Modules
 
-| Module       | Description                                                      | Status      |
-| ------------ | ---------------------------------------------------------------- | ----------- |
-| Vocabulary   | Word definitions, synonyms/antonyms, matching exercises          | Placeholder |
-| Grammar      | Sentence correction, fill-in-the-blank, tense practice           | Placeholder |
-| Spelling     | Dictation-style exercises, commonly misspelled words             | Placeholder |
-| Reading      | Short passages with comprehension questions                      | Placeholder |
+| Module         | Description                                                      | Status       |
+| -------------- | ---------------------------------------------------------------- | ------------ |
+| Vocabulary     | Word–definition matching, fill-in-choice, context exercises      | Units 5-7    |
+| Grammar        | Sentence correction, fill-in-the-blank, tense practice           | Placeholder  |
+| Spelling       | Dictation-style exercises with speech synthesis                  | Placeholder  |
+| Reading        | Short passages with comprehension questions                      | Units 5-7    |
+| Listening      | Listen and answer comprehension questions (Speech Synthesis API) | Units 5-7    |
+| Practice Tests | Full unit tests with grading (vocabulary, grammar, reading, listening) | Units 5-7 |
 
 ## Tech Stack
 
 - **HTML5 / CSS3 / Vanilla JS** — no frameworks, no build tools
 - **CSS custom properties** for theming
-- **ES modules–ready** — `app.js` exposes a global `App` utility object; modules can add their own `<script>` tags
-- **Responsive** — mobile-friendly grid layout
+- **Web Speech Synthesis API** for listening exercises
+- **PWA** — installable with offline support
+- **ES modules–ready** — `app.js` exposes a global `App` utility object
 
 ## Adding a New Module
 
@@ -57,6 +72,10 @@ Each module can store exercise data in a JSON file within its folder (e.g. `modu
 ```js
 const data = await App.loadJSON("data.json");
 ```
+
+## Image Generation
+
+The `tools/generate_images.py` script generates illustrations using AI (Together AI or Google Gemini). See the script header for usage. Images are committed to the repo as static assets.
 
 ## Deployment
 
@@ -75,16 +94,6 @@ python -m http.server 8000
 # Node (npx)
 npx serve .
 ```
-
-## Future Roadmap
-
-- [ ] Implement vocabulary module (word–definition matching, multiple choice)
-- [ ] Implement grammar module (fill-in-the-blank, error correction)
-- [ ] Implement spelling module (audio dictation with Web Speech API)
-- [ ] Implement reading module (passages + comprehension questions)
-- [ ] Score tracking with localStorage
-- [ ] Difficulty levels per module
-- [ ] Dark mode toggle
 
 ## License
 
