@@ -136,6 +136,29 @@ footer {
 .card--emerald:hover { border-top-color: #059669; }
 .card--rose:hover    { border-top-color: #e11d48; }
 
+/* Card with image */
+.card--img {
+  padding: 0;
+  overflow: hidden;
+  border-top: none;
+}
+.card--img h2,
+.card--img p {
+  padding: 0 1.25rem;
+}
+.card--img h2 {
+  padding-top: 1rem;
+}
+.card--img p {
+  padding-bottom: 1.25rem;
+}
+.card-img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+}
+
 /* ===== Module Page ===== */
 .module-header {
   margin-bottom: 2rem;
