@@ -1,0 +1,74 @@
+{
+  "title": "Review: Units 5-9 Test",
+  "questionsPerSection": 5,
+  "sections": [
+    {
+      "id": "grammar-mix",
+      "title": "Grammar Mix (Units 5-9)",
+      "type": "fill-choice",
+      "instructions": "One or two questions from each unit's main grammar point. Choose the best answer.",
+      "questions": [
+        { "sentence": "Cars ___ in big factories. (Unit 5 - passive voice)", "options": ["are made", "is made", "make"], "answer": "are made", "explanation": "Plural subject 'Cars' → 'are' + past participle 'made'." },
+        { "sentence": "Why don't we ___ to the cinema this weekend? (Unit 5 - suggestions)", "options": ["go", "going", "to go"], "answer": "go", "explanation": "After 'Why don't we ...?' we use the base form." },
+        { "sentence": "You ___ wear a helmet when you ride a bike. It's the rule. (Unit 6 - modals)", "options": ["must", "should", "can't"], "answer": "must", "explanation": "'Must' is used for strong rules or laws." },
+        { "sentence": "You ___ drink so much cola — it isn't good for you. (Unit 6 - advice)", "options": ["shouldn't", "have to", "must"], "answer": "shouldn't", "explanation": "'Shouldn't' gives advice — it's a bad idea but not forbidden." },
+        { "sentence": "If you ___ ice in the sun, it melts. (Unit 7 - zero conditional)", "options": ["put", "puts", "putting"], "answer": "put", "explanation": "Zero conditional: 'you' + present simple base form." },
+        { "sentence": "A: ___ B: She's friendly and clever. (Unit 7 - look like / be like / like)", "options": ["What is she like?", "What does she look like?", "What does she like?"], "answer": "What is she like?", "explanation": "'Friendly' and 'clever' are personality → 'What is she like?'" },
+        { "sentence": "Look at the clouds — it ___ rain. (Unit 8 - going to)", "options": ["is going to", "are going to", "going"], "answer": "is going to", "explanation": "'It' + 'is going to' + base verb. Prediction from what we see." },
+        { "sentence": "Go ___ the bridge and the hotel is on the right. (Unit 8 - prepositions of movement)", "options": ["across", "into", "out of"], "answer": "across", "explanation": "We go 'across' a bridge from one side to the other." },
+        { "sentence": "I always brush my teeth ___ I go to bed. (Unit 9 - time clauses)", "options": ["before", "after", "until"], "answer": "before", "explanation": "Brushing teeth happens first → 'before' bed." },
+        { "sentence": "Climbing a mountain is so ___! I want to do it again. (Unit 9 - -ing adjectives)", "options": ["exciting", "excited", "excite"], "answer": "exciting", "explanation": "The activity causes the feeling → '-ing' adjective." }
+      ]
+    },
+    {
+      "id": "vocab-mix",
+      "title": "Vocabulary Mix (Units 5-9)",
+      "type": "match",
+      "instructions": "Match each description to the correct word. One item from each unit's main vocabulary.",
+      "pairs": [
+        { "prompt": "Unit 5: This material is made of trees and you can write on it.", "answer": "paper" },
+        { "prompt": "Unit 5: A piece of clothing for a man's neck, worn with a shirt.", "answer": "tie" },
+        { "prompt": "Unit 6: The school subject where you study rivers, mountains and countries.", "answer": "Geography" },
+        { "prompt": "Unit 6: A small device you carry that lets you call and send messages.", "answer": "mobile phone" },
+        { "prompt": "Unit 7: This person serves food in a restaurant.", "answer": "waiter" },
+        { "prompt": "Unit 7: The opposite of 'lazy' and 'unfriendly' — describes a top student.", "answer": "clever" },
+        { "prompt": "Unit 8: You stay here when you travel and sleep in a room for the night.", "answer": "hotel" },
+        { "prompt": "Unit 8: The compass direction opposite to 'south'.", "answer": "north" },
+        { "prompt": "Unit 9: You carry it on your back when you go hiking.", "answer": "rucksack" },
+        { "prompt": "Unit 9: A small piece of paper you stick on a postcard so the post office sends it.", "answer": "stamp" }
+      ]
+    },
+    {
+      "id": "listening",
+      "title": "Listening",
+      "type": "listen-comprehension",
+      "instructions": "Press Listen, then answer the question about what you heard. Quick mix from units 5-9.",
+      "questions": [
+        { "sentence": "These jeans are made of denim — a strong, soft cotton material.", "question": "What are the jeans made of?", "options": ["Denim", "Wool", "Plastic"], "answer": "Denim" },
+        { "sentence": "You should drink more water and eat more fruit if you want to be healthy.", "question": "What advice did you hear?", "options": ["Drink more water and eat more fruit", "Eat less", "Drink coffee"], "answer": "Drink more water and eat more fruit" },
+        { "sentence": "He's very kind and helpful. Everybody in school likes him.", "question": "What is he like?", "options": ["Kind and helpful", "Lazy and unfriendly", "Quiet and bored"], "answer": "Kind and helpful" },
+        { "sentence": "When you get to Road 5, you turn right and go straight on for a long time.", "question": "Which way do you turn at Road 5?", "options": ["Right", "Left", "Back"], "answer": "Right" },
+        { "sentence": "I'm going to the beach with my family tomorrow. I'm so excited!", "question": "How does she feel about the trip?", "options": ["Excited", "Bored", "Worried"], "answer": "Excited" }
+      ]
+    },
+    {
+      "id": "review-reading",
+      "title": "Reading: A Year of Adventures",
+      "type": "reading",
+      "instructions": "Read Sophie's diary about her year at school and on holiday. Then answer the questions. It mentions topics from units 5-9.",
+      "passage": "This year was the best year ever! I learned so many new things at school and we also had some amazing trips.\n\nIn September, we started a project in Science class about materials. We learned that bottles are made of glass or plastic, jumpers are made of wool, and jeans are made of denim. We even made our own paper from old newspapers — it was tiring but really interesting!\n\nMy favourite subjects this year are Geography and Art. In Geography, we learned about big cities and small villages. I now know that a city has over 300,000 people, but a village usually has fewer than 1,000. In Art, we drew pictures of famous buildings and made models of the Statue of Liberty.\n\nMy best friend Emma is very kind and clever. She always helps me with maths. I think when she grows up, she's going to be a teacher. I want to be a journalist because I love writing stories. My mum says I should practise every day if I want to be good at it.\n\nIn the spring, we went on a school trip to London. The teachers told us, 'You must stay together. You mustn't run in the museum.' We took a bus across the bridge and walked past Big Ben. The hotel was excellent and the food was lovely.\n\nIn the summer, my family went on holiday to Spain. Before we left, I packed my suitcase with my pyjamas, my trainers and my camera. We stayed in a small village by the sea. Every morning we walked through the forest to the beach. The views were amazing! I sent postcards to all my friends — I had to buy lots of stamps at the post office.\n\nNext year, I'm going to learn even more. I'm a bit worried about the maths exam, but I'm excited about everything else!",
+      "questions": [
+        { "question": "What did Sophie's class learn about in Science? (Unit 5)", "options": ["Animals", "Materials", "Space", "Plants"], "answer": "Materials" },
+        { "question": "What is denim used to make? (Unit 5)", "options": ["Jumpers", "Jeans", "Bottles", "Paper"], "answer": "Jeans" },
+        { "question": "What are Sophie's favourite subjects? (Unit 6)", "options": ["Maths and Science", "English and History", "Geography and Art", "Sports and Music"], "answer": "Geography and Art" },
+        { "question": "What is Emma like? (Unit 7)", "options": ["Lazy and unkind", "Kind and clever", "Loud and bored", "Tall and slim"], "answer": "Kind and clever" },
+        { "question": "What does Sophie want to be? (Unit 7)", "options": ["A teacher", "A journalist", "A photographer", "A doctor"], "answer": "A journalist" },
+        { "question": "What rule did the teachers give on the London trip? (Unit 6 - modals)", "options": ["You can run anywhere", "You must stay together", "You should sing songs", "You have to take photos"], "answer": "You must stay together" },
+        { "question": "How did they cross the river in London? (Unit 8 - prepositions of movement)", "options": ["By boat", "By bus across the bridge", "On foot through the tunnel", "By plane"], "answer": "By bus across the bridge" },
+        { "question": "What did Sophie pack in her suitcase? (Unit 9 - travel vocab)", "options": ["A tent and rucksack", "Pyjamas, trainers and a camera", "A compass and torch", "Maps and books"], "answer": "Pyjamas, trainers and a camera" },
+        { "question": "What did Sophie do every morning on her Spain holiday? (Unit 8 - movement)", "options": ["Slept late", "Walked through the forest to the beach", "Went to the museum", "Took a plane"], "answer": "Walked through the forest to the beach" },
+        { "question": "How does Sophie feel about the maths exam next year? (Unit 9 - feelings)", "options": ["Excited", "Worried", "Bored", "Surprised"], "answer": "Worried" }
+      ]
+    }
+  ]
+}
